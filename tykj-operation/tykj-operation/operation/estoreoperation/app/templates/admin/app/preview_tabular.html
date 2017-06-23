@@ -1,0 +1,177 @@
+{% load i18n adminmedia admin_modify %}
+<div class="inline-group" id="{{ inline_admin_formset.formset.prefix }}-group">
+  <div class="tabular inline-related {% if forloop.last %}last-related{% endif %}">
+{{ inline_admin_formset.formset.management_form }}
+<fieldset class="module previewImage">
+   <h2>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
+   {{ inline_admin_formset.formset.non_form_errors }}
+     {% for inline_admin_form in inline_admin_formset %}
+        {% if inline_admin_form.form.non_field_errors %}
+        <div><span class="{{ inline_admin_form|cell_count }}">{{ inline_admin_form.form.non_field_errors }}</span></div>
+        {% endif %}
+        <div class="dynamic-preview_icon_urls imgItem {% if forloop.last %} empty-form{% endif %}"
+             id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
+        <span class="original">
+          {% if inline_admin_form.has_auto_field %}{{ inline_admin_form.pk_field.field }}{% endif %}
+          {{ inline_admin_form.fk_field.field }}
+          {% spaceless %}
+          {% for fieldset in inline_admin_form %}
+            {% for line in fieldset %}
+              {% for field in line %}
+                {% if field.is_hidden %} {{ field.field }} {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+          {% endspaceless %}
+        </span>
+        {% for fieldset in inline_admin_form %}
+          {% for line in fieldset %}
+            {% for field in line %}
+              <span class="{{ field.field.name }}">
+              {% if field.is_readonly %}
+                  <p>{{ field.contents }}</p>
+              {% else %}
+                  {{ field.field.errors.as_ul }}
+                  {{ field.field }}
+              {% endif %}
+              </span>
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+
+        {% if inline_admin_formset.formset.can_delete %}
+          <span class="delete" onclick="delete_event($(this));">{% if inline_admin_form.original %}{{ inline_admin_form.deletion_field.field }}{% endif %}</span>
+        {% endif %}
+        </div>
+     {% endfor %}
+</fieldset>
+  </div>
+</div>
+<script type="text/javascript" src="/static/admin_tools/js/utils.js"></script>
+<script type="text/javascript">
+if(!$){
+ var js_files = [
+        {
+            src : '/static/admin_tools/js/jquery/jquery.min.js',
+            test: function() { return typeof(jQuery) == 'undefined'; }
+        }
+    ];
+
+    loadScripts(js_files);
+}
+
+function updateOrder(nextD) {
+    while (nextD.length > 0) {
+        var order_val = nextD.find('.order input')[0].value;
+        if (order_val != "") {
+            nextD.find('.order input')[0].value = parseInt(order_val) - 1;
+        }
+        nextD = nextD.next('div.imgItem');
+    }
+} 
+
+function delete_event(delete_span) {
+    var p_div = delete_span.parent();
+    var p_next = p_div.next();
+    if(p_div.hasClass('new')){
+        var p_order = p_div.find('.order input')[0].value;
+        if ($('.new').length == 2) {
+            if(p_order != ""){
+                p_div.find('.order input')[0].value = "";
+                p_div.find('.file-upload input')[0].value = "";
+            }
+        } else {
+            p_div.remove();
+            items_count = $(".path").find(".file-upload").length - 1;
+            $('#id_preview_icon_urls-TOTAL_FORMS').val(items_count);
+            if(p_order != ""){
+                updateOrder(p_next); 
+            }
+        }
+    } else {
+        p_div.css('display', 'none');
+        delete_span.children()[0].checked = true;
+        items_count--;
+        updateOrder(p_next);
+    }    
+}
+
+function addItem(curDom){
+    $(curDom).parent().parent().parent().find('.order>input')[0].value=items_count;
+    $(curDom).next().click();
+    $(curDom).removeClass('new');
+    $('.imgItem#preview_icon_urls-empty').before('<div class="dynamic-preview_icon_urls imgItem new" id="preview_icon_urls-' + items_count + '">' + $('.imgItem#preview_icon_urls-empty .imgItem.new').html().replace(/__prefix__/g, items_count) + '</div>');
+    items_count++;
+    $('#id_preview_icon_urls-TOTAL_FORMS').val(items_count);
+}
+
+(function($) {
+    $(document).ready(function($) {
+        var rows = "#{{ inline_admin_formset.formset.prefix }}-group .tabular.inline-related  div";
+        var alternatingRows = function(row) {
+            $(rows).not(".add-row").removeClass("row1 row2")
+                .filter(":even").addClass("row1").end()
+                .filter(rows + ":odd").addClass("row2");
+        }
+        var reinitDateTimeShortCuts = function() {
+            // Reinitialize the calendar and clock widgets by force
+            if (typeof DateTimeShortcuts != "undefined") {
+                $(".datetimeshortcuts").remove();
+                DateTimeShortcuts.init();
+            }
+        }
+        var updateSelectFilter = function() {
+            // If any SelectFilter widgets are a part of the new form,
+            // instantiate a new SelectFilter instance for it.
+            if (typeof SelectFilter != "undefined"){
+                $(".selectfilter").each(function(index, value){
+                  var namearr = value.name.split('-');
+                  SelectFilter.init(value.id, namearr[namearr.length-1], false, "{% admin_media_prefix %}");
+                });
+                $(".selectfilterstacked").each(function(index, value){
+                  var namearr = value.name.split('-');
+                  SelectFilter.init(value.id, namearr[namearr.length-1], true, "{% admin_media_prefix %}");
+                });
+            }
+        }
+        var initPrepopulatedFields = function(row) {
+            row.find('.prepopulated_field').each(function() {
+                var field = $(this);
+                var input = field.find('input, select, textarea');
+                var dependency_list = input.data('dependency_list') || [];
+                var dependencies = [];
+                $.each(dependency_list, function(i, field_name) {
+                  dependencies.push('#' + row.find(field_name).find('input, select, textarea').attr('id'));
+                });
+                if (dependencies.length) {
+                    input.prepopulate(dependencies, input.attr('maxlength'));
+                }
+            });
+        }
+
+        // change path
+        items = $(".path").find(".file-upload")
+        $.each(items, function(index, item){
+            var href = $("a", item).attr("href");
+            $(item).append("<img src='" + href + "'/>");
+        });
+         
+        // add 'new' class
+        $('.empty-form').prev().addClass('new');
+        items_count = items.length + 1;
+
+        $('#preview_icon_urls-empty').html()
+	    var tmp = $('.previewImage .imgItem:nth-last-child(2) .path');
+        var tmp2 = tmp.html();
+        tmp.html('<p class="file-upload">图片地址: <a href=""></a> <br><img src="" onclick="addItem(this);">修改: ' + tmp2 + '</p>');
+        tmp.addClass('emptyImg');
+        tmp = $('#preview_icon_urls-empty .path');
+        tmp.addClass('emptyImg');
+        $('#preview_icon_urls-empty .delete, .previewImage .imgItem:nth-last-child(2) .delete').prepend('<input type="checkbox" name="preview_icon_url" id="id_preview_icon_url">')
+        tmp.html('<p class="file-upload">图片地址: <a href=""></a> <br><img src="" onclick="addItem(this);">修改: ' + tmp.html() + '</p>');
+        tmp = $('#preview_icon_urls-empty');
+        tmp.html('<div class="imgItem new">' + tmp.html() + '</div>');
+        $('.order').prepend('序号：');
+    });
+})(django.jQuery);
+</script>

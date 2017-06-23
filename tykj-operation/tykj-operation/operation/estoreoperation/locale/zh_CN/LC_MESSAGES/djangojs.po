@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-07 21:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: admin_tools/static/admin/js/actions.min.js:5
+msgid ""
+"You have unsaved changes on individual editable fields. "
+"If you run an action, your unsaved changes will be lost."
+msgstr "您有未保存的修改内容，建议将它们保存后再做此操作，否则将丢失这些修改。是否继续？"
+
+#: admin_tools/static/admin/js/actions.min.js:6
+msgid ""
+"You have selected an action, but you haven't saved your changes to "
+"individual fields yet. Please click OK to save. You'll need to re-run the "
+"action."
+msgstr "您是否保存当前的修改？"
+
+#: admin_tools/static/admin/js/actions.min.js:6
+msgid ""
+"You have selected an action, and you haven't made any changes on individual "
+"fields. You're probably looking for the Go button rather than the Save "
+"button."
+msgstr "您未做任何修改，无需保存"
+
+#: analysis/static/analysis/js/daterange.js:11
+msgid "Today"
+msgstr "今天"
+
+#: analysis/static/analysis/js/daterange.js:12
+msgid "Yesterday"
+msgstr "昨天"
+
+#: analysis/static/analysis/js/daterange.js:13
+msgid "Last 7 Days"
+msgstr "最近7天"
+
+#: analysis/static/analysis/js/daterange.js:14
+msgid "Last 30 Days"
+msgstr "最近30天"
+
+#: analysis/static/analysis/js/daterange.js:15
+msgid "Last 90 Days"
+msgstr "最近90天"
+
+#: analysis/static/analysis/js/daterange.js:16
+msgid "Previous Month"
+msgstr "上一个月"
+
+#: analysis/static/analysis/js/daterange.js:17
+msgid "Previous Quarter"
+msgstr "上一个季度"
+
+#: analysis/static/analysis/js/daterange.js:18
+msgid "Month to Date"
+msgstr "本月至今"
+
+#: analysis/static/analysis/js/daterange.js:19
+msgid "Quarter to Date"
+msgstr "本季度至今"
+
+#: analysis/static/analysis/js/daterange.js:20
+msgid "Custom Date"
+msgstr "自定义日期"
+
+#: analysis/static/analysis/js/daterange.js:22
+msgid "Start"
+msgstr "开始"
+
+#: analysis/static/analysis/js/daterange.js:23
+msgid "End"
+msgstr "结束"
+
+#: analysis/static/analysis/js/daterange.js:24
+msgid "Submit"
+msgstr "提交"
+
+#: analysis/static/analysis/js/daterange.js:25
+msgid "Cancel"
+msgstr "取消"

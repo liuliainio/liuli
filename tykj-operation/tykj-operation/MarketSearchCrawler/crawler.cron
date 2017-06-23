@@ -1,0 +1,21 @@
+SHELL=/bin/bash
+PATH=/usr/lib/:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Activity reports every 10 minutes everyday
+40 * * * * root (cd /var/app/enabled/MarketSearchCrawler && ./update_moniter.sh  >>  /tmp/update_monitor.log  2>&1)
+*/1 * * * * root (cd /var/app/enabled/MarketSearchCrawler && ./monitor_baidu.sh  >>  /tmp/monitor_baidu.log  2>&1)
+*/5  * * * * root python /var/app/enabled/MarketSearchCrawler/merge_apk.py  >>  /tmp/merge_apk.log  2>&1
+*/5  * * * * root (cd /var/app/enabled/MarketSearchCrawler/scripts/verification/ && make sync_tencent_safe  >>  /tmp/sync_tencent_safe.log  2>&1)
+10 */2  * * * root (cd /var/app/enabled/MarketSearchCrawler && ./scripts/add_verification_ids_update.sh)
+10 0  * * * root (cd /var/app/enabled/MarketSearchCrawler && ./scripts/verification_delete_files.sh >> /var/app/log/MarketSearchCrawler/verification_delete_files.log 2>&1)
+0  8 * * * root python /var/app/enabled/MarketSearchCrawler/scripts/monitor_report.py >> /tmp/monitor_report.log 2>&1
+0  8 * * * root (cd /var/app/enabled/MarketSearchCrawler/ && ./scripts/find_beta_apps.sh >> /tmp/find_beta_apps.cron.log 2>&1)
+0   23 * * * root (cd /var/app/enabled/MarketSearchCrawler/scripts && python merge_img.py >> /tmp/merge_img.log 2>&1)
+0  */2 * * * root (cd /var/app/enabled/MarketSearchCrawler/ && ./merge_meta.sh)
+0  */2 * * * root (cd /var/app/enabled/MarketSearchCrawler/ && ./update_meta.sh)
+5   1  * * * root  sudo rm /tmp/spider_update.* -rf
+#10 * * * *  qpwang  cd /home/qpwang/MarketSearchCrawler/scripts && python merge_ipa.py
+#20 * * * *  qpwang  cd /home/qpwang/MarketSearchCrawler/scripts && python merge_itunes.py
+#0 23 * * *  qpwang  cd /home/qpwang/MarketSearchCrawler/scripts && python merge_img.py
+#0 22 * * *  qpwang  cd /home/qpwang/MarketSearchCrawler/scripts && python merge_apt.py
+#0 21 * * *  qpwang  cd /home/qpwang/MarketSearchCrawler/scripts && python import_kuaiyong.py

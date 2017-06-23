@@ -1,0 +1,38 @@
+2012-09-14 00:10:38+0800 [tripadvisor.com] ERROR: Error caught on signal handler: <bound method ?._spider_idle of <MarketSearch.extension.DontCloseSpiderExtension object at 0x2b57d10>>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/utils/reactor.py", line 41, in __call__
+	    return self._func(*self._a, **self._kw)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/core/engine.py", line 118, in _next_request
+	    self._spider_idle(spider)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/core/engine.py", line 239, in _spider_idle
+	    spider=spider, dont_log=DontCloseSpider)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/utils/signal.py", line 22, in send_catch_log
+	    *arguments, **named)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/xlib/pydispatch/robustapply.py", line 47, in robustApply
+	    return receiver(*arguments, **named)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/extension.py", line 30, in _spider_idle
+	    spider.crawler.queue.append_spider_name(spider.name)
+	exceptions.AttributeError: 'CrawlerProcess' object has no attribute 'queue'
+	
+2012-09-14 00:12:05+0800 [tripadvisor.com] ERROR: Error caught on signal handler: <bound method ?._spider_idle of <MarketSearch.extension.DontCloseSpiderExtension object at 0x2817d10>>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/utils/reactor.py", line 41, in __call__
+	    return self._func(*self._a, **self._kw)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/core/engine.py", line 118, in _next_request
+	    self._spider_idle(spider)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/core/engine.py", line 239, in _spider_idle
+	    spider=spider, dont_log=DontCloseSpider)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/utils/signal.py", line 22, in send_catch_log
+	    *arguments, **named)
+	  File "/usr/local/lib/python2.6/dist-packages/scrapy/xlib/pydispatch/robustapply.py", line 47, in robustApply
+	    return receiver(*arguments, **named)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/extension.py", line 30, in _spider_idle
+	    spider.crawler.queue.append_spider_name(spider.name)
+	exceptions.AttributeError: 'CrawlerProcess' object has no attribute 'queue'
+	

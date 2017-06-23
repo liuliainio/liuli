@@ -1,0 +1,85 @@
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+.date_range {
+    float: right;
+}
+
+#content {
+    width: 900px;
+}
+
+#content h1 {
+    margin-bottom: 35px;
+}
+
+.data_table {
+    margin: 0 10px 20px 0;
+    padding: 0 0 100px 0;
+    border: 1px solid #DDD!important;
+}
+
+.data_table thead tr td {
+    font-weight: bold;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 5px;
+    background: #C5C5C5 top left repeat-x;
+    border-right: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+}
+
+.data_table tbody tr td {
+    border-right: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+}
+
+.pagination .page {
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 22px;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+.pagination .disabled {
+    padding: 2px 6px;
+    border: solid 1px #CECECE;
+    background: white;
+    text-decoration: none;
+    color: #CECECE;
+}
+
+.pagination a:link, .pagination a:visited {
+    padding: 2px 6px;
+    border: solid 1px #ccc;
+    background: white;
+    text-decoration: none;
+}
+
+.pagination .next a, .pagination .prev a {
+    border-width: 2px !important;
+    margin-right: 6px;
+}
+
+.pagination .current {
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.pagination .page a:hover {
+    color: white;
+    background: #5b80b2;
+    border-color: #036;
+}

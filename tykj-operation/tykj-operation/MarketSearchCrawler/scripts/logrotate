@@ -1,0 +1,23 @@
+/tmp/*.log
+{
+    daily
+    dateext
+    missingok
+    copytruncate
+    compress
+    ifempty
+    rotate 31
+    sharedscripts
+}
+/var/app/log/MarketSearchCrawler/*.log
+{
+    daily
+    dateext
+    missingok
+    copytruncate
+    compress
+    ifempty
+    rotate 31
+    sharedscripts
+}
+

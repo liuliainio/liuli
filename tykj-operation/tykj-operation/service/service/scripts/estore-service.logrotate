@@ -1,0 +1,24 @@
+/var/app/log/service/info.log
+/var/app/log/service/error.log
+/var/app/log/service/uploadapplist.log
+/var/app/log/service/openapi.log
+{
+        daily
+		dateext
+        rotate 31
+        missingok
+        nocompress
+        ifempty
+        create estore nogroup
+}
+/var/app/log/service/uwsgi.log
+{
+	    daily
+	    dateext
+	    rotate 31
+	    missingok
+	    nocompress
+	    ifempty
+	    copytruncate
+	    create estore nogroup
+}

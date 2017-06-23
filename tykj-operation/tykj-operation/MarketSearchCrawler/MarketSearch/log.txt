@@ -1,0 +1,1517 @@
+2012-11-01 20:29:29+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_31#30_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:29+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_80#51_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:30+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_46#9_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:31+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_30#38_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:31+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_36#69_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:32+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_49#75_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:32+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_71#100_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:33+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_37#48_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:33+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_81#68_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:34+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_45#10_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:34+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_79#80_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:29:35+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_52#23_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:54+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_35#80_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:54+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_40#61_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:55+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_36#47_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:56+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_42#30_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:56+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_37#3_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:57+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_39#70_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:57+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_0#84_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:58+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_29#63_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:58+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_0#83_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:31:59+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_30#26_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:32:00+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_45#22_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:32:00+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_52#64_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:42+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_71#41_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:46+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_0#87_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:46+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_80#15_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:47+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_42#86_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:48+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_0#55_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:48+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_40#89_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:49+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_36#45_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:50+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_37#2_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:50+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_39#99_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:51+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_30#30_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:52+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_81#72_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-01 20:33:52+0800 [hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/apps_52#85_1_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 104, in parse
+	    other_links = get_app_list(url)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 308, in get_app_list
+	    print e
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:28:35+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_0#1_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:29:59+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_4_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:00+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_2_5_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:00+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_6_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:01+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_3_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:02+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_2_9_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:02+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_9_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:03+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_8_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:04+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_1_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:04+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_1_10_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:30:05+0800 [update.goapk.com] ERROR: Spider error processing <GET http://www.anzhi.com/sort_2_8_new.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 21:45:17+0800 [update.nduoa.com] ERROR: Spider error processing <GET http://www.nduoa.com/cat2?type=2&page=10>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:01+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/30/18_0_0_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:02+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/30/36_0_0_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:02+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/40/0_0_18_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:02+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/40/36_0_18_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:03+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/30/54_0_0_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:03+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/40/54_0_18_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:03+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/30/0_0_0_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-06 23:45:04+0800 [update.appchina.com] ERROR: Spider error processing <GET http://www.appchina.com/category/30/72_0_0_3_0_0_0.html>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 17:59:25+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com/games_0#6_3_0_0_0_0_0?6>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:01+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=3/apps_0#3_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:02+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=8/apps_0#8_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:02+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=8/games_0#8_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:02+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=6/apps_0#6_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:03+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=5/apps_0#5_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:05+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=10/games_0#10_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:05+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=9/games_0#9_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:06+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=3/games_0#3_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:06+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=5/games_0#5_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:07+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=9/apps_0#9_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:07+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=7/games_0#7_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:07+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=2/apps_0#2_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:04:08+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=7/apps_0#7_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    print 123
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:19+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=1/apps_0#1_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:19+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=5/games_0#5_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:20+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=8/apps_0#8_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:20+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=3/apps_0#3_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:20+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=5/apps_0#5_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:21+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=6/apps_0#6_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:21+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=1/games_0#1_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:41+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=9/apps_0#9_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:42+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=2/apps_0#2_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:42+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=7/games_0#7_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:42+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=4/games_0#4_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:43+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?c=7/apps_0#7_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:43+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=3/games_0#3_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:43+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=9/games_0#9_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	
+2012-11-17 18:09:44+0800 [update.hiapk.com] ERROR: Spider error processing <GET http://apk.hiapk.com?x=10/games_0#10_3_0_0_0_0_0>
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 1178, in mainLoop
+	    self.runUntilCurrent()
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/base.py", line 800, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 368, in callback
+	    self._startRunCallbacks(result)
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.6/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/qpwang/workspace/MarketSearchCrawler/MarketSearch/spiders/base.py", line 130, in parse
+	    else:
+	exceptions.IOError: [Errno 32] Broken pipe
+	

@@ -1,0 +1,6 @@
+from app import AppMongodbStorage
+from promotion import PromotionMongodbStorage
+from search import SearchMongodbStorage
+from update import UpdateMongodbStorage
+from push import PushMongodbStorage
+from location import LocationMongodbStorage

@@ -1,0 +1,8 @@
+SHELL=/bin/bash
+PATH=/usr/lib/:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Activity reports every 10 minutes everyday
+10  8  * * * root (ps aux | grep verification/rabbit | grep -v grep | awk '{print $2}' | xargs sudo kill -9)
+10  8  * * * root (ps aux | grep interception/rabbit | grep -v grep | awk '{print $2}' | xargs sudo kill -9)
+10  8  * * * root (rm /tmp/inter*.apk)
+0   21 * * * root (/var/app/enabled/MarketSearchCrawler/scripts/estore_quality.sh  >>  /tmp/estore_quality.log  2>&1)

@@ -1,0 +1,5 @@
+global-include *.py *.sh *.xml *.cfg *.mo *.jar *.png *.list *.ttf
+graft scripts
+graft estorecore/locale/zh_CN/LC_MESSAGES
+graft estorecore/reporting/templates
+graft estorecore/utils

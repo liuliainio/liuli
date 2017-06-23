@@ -1,0 +1,3 @@
+ct-crawler2: sudo nohup ./download.sh {as.baidu.com,wandoujia.com,appchina.com,myapp.com}
+ct-crawler1:  sudo nohup ./download.sh {zhushou.360.cn}
+ct-crawler3:  sudo nohup ./download.sh {appchina.com,hiapk.com}

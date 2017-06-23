@@ -1,0 +1,1317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-04 15:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: settings.py:264
+msgid "application management"
+msgstr "应用库管理"
+
+#: settings.py:287
+msgid "applist management"
+msgstr "榜单管理"
+
+#: settings.py:303
+msgid "push management"
+msgstr "推送管理"
+
+#: settings.py:315
+msgid "product management"
+msgstr "产品管理"
+
+#: views.py:104
+msgid "Is Copycat"
+msgstr "疑似"
+
+#: views.py:105
+msgid "Package Name"
+msgstr "包名"
+
+#: views.py:106
+msgid "App Name"
+msgstr "应用名称"
+
+#: views.py:107
+msgid "Version Count"
+msgstr "版本数"
+
+#: views.py:108
+msgid "Version Code"
+msgstr "版本号"
+
+#: views.py:109
+msgid "Download Count"
+msgstr "下载次数"
+
+#: views.py:128 offline/views.py:32
+msgid "name"
+msgstr "应用名称"
+
+#: views.py:129
+msgid "package_name"
+msgstr "包名"
+
+#: views.py:130 offline/views.py:32
+msgid "sub_category_name"
+msgstr "子分类"
+
+#: views.py:131
+msgid "modifier"
+msgstr "更新人"
+
+#: views.py:132
+msgid "modified_time"
+msgstr "更新时间"
+
+#: views.py:133
+msgid "unpublished_reason"
+msgstr "下架原因"
+
+#: views.py:165
+msgid "input error!"
+msgstr "输入错误!"
+
+#: admin/applist/admin.py:42 admin/applist/admin.py:166
+#: admin/applist/admin.py:183 admin/applist/admin.py:207
+#: admin/applist/admin.py:226 admin/newapps/admin.py:24
+#: admin/newapps/admin.py:267 app/admin.py:92 app/admin.py:132
+#: app/admin.py:229 app/admin.py:306 app/admin.py:331 app/admin.py:349
+#: app/admin.py:392 app/admin.py:412 app/admin.py:431 app/admin.py:456
+#: app/admin.py:482 app/admin.py:500 app/admin.py:540 promotion/admin.py:21
+#: promotion/admin.py:62 promotion/admin.py:136 push/admin.py:20
+#: search/admin.py:17 search/admin.py:35 statistics/admin.py:45
+#: statistics/admin.py:63 statistics/admin.py:81 statistics/admin.py:99
+#: statistics/admin.py:117 statistics/admin.py:135 statistics/admin.py:153
+#: statistics/admin.py:171 statistics/admin.py:189 update/admin.py:28
+msgid "Basic"
+msgstr "基本信息"
+
+#: admin/applist/admin.py:45
+msgid "Extra Infos"
+msgstr "扩展信息"
+
+#: admin/applist/admin.py:49 admin/applist/admin.py:172
+#: admin/applist/admin.py:186 admin/applist/admin.py:213
+#: admin/applist/admin.py:235 admin/newapps/admin.py:81
+#: admin/newapps/admin.py:95 admin/newapps/admin.py:106
+#: admin/newapps/admin.py:270 app/admin.py:95 app/admin.py:135
+#: app/admin.py:241 app/admin.py:312 app/admin.py:334 app/admin.py:352
+#: app/admin.py:395 app/admin.py:415 app/admin.py:434 app/admin.py:459
+#: app/admin.py:485 app/admin.py:503 app/admin.py:543 promotion/admin.py:30
+#: promotion/admin.py:71 promotion/admin.py:139 push/admin.py:30
+#: search/admin.py:20 search/admin.py:38 statistics/admin.py:51
+#: statistics/admin.py:69 statistics/admin.py:87 statistics/admin.py:105
+#: statistics/admin.py:123 statistics/admin.py:141 statistics/admin.py:159
+#: statistics/admin.py:177 statistics/admin.py:195 update/admin.py:34
+msgid "Status"
+msgstr "状态"
+
+#: admin/applist/admin.py:60 admin/applist/admin.py:283
+#: admin/applist/admin.py:419
+msgid "off shelve"
+msgstr "已下架"
+
+#: admin/applist/admin.py:62 admin/applist/admin.py:285
+#: admin/applist/admin.py:421
+msgid "Ok"
+msgstr "正常"
+
+#: admin/applist/admin.py:65 admin/applist/admin.py:288
+#: admin/applist/admin.py:424
+msgid "app status"
+msgstr "应用状态"
+
+#: admin/applist/admin.py:84 admin/applist/admin.py:295
+#: admin/applist/admin.py:366 admin/applist/admin.py:404
+#: admin/applist/admin.py:438 search/admin.py:47
+msgid "app"
+msgstr "应用"
+
+#: admin/applist/admin.py:169 admin/applist/admin.py:210
+#: admin/applist/admin.py:229
+msgid "Rich"
+msgstr "富内容"
+
+#: admin/applist/admin.py:197 admin/applist/forms.py:112
+msgid "display mode"
+msgstr "展示方式"
+
+#: admin/applist/admin.py:200
+msgid ""
+"Please upload JPEG, PNG, GIF files, size: top area big banner: 480x220, "
+"double column small banner: 237x95, single column middle banner: 480x115, "
+"double column game app: 237x115."
+msgstr ""
+"请上传 JPEG, PNG 或 GIF文件, 大小: 顶部大Banner: 480x220, 双列小Banner: "
+"237x95, 单列横幅Banner: 480x115, 双列APP Banner: 237x115"
+
+#: admin/applist/admin.py:219
+msgid "Please upload JPEG, PNG, GIF files, size: 220x130"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 220x130"
+
+#: admin/applist/admin.py:232 push/admin.py:26
+msgid "Extra infos"
+msgstr "扩展信息"
+
+#: admin/applist/admin.py:241
+msgid "Please upload JPEG, PNG, GIF files, size: 480x375"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 480x375"
+
+#: admin/applist/admin.py:359 admin/applist/admin.py:397
+#: admin/applist/admin.py:431 admin/newapps/admin.py:53 app/admin.py:286
+#: app/admin.py:379
+msgid "versions"
+msgstr "版本"
+
+#: admin/applist/admin.py:373
+msgid "add new type"
+msgstr "添加新类别"
+
+#: admin/applist/admin.py:454 admin/applist/forms.py:246
+#: admin/applist/models.py:101 admin/utilities/models.py:15
+msgid "Application"
+msgstr "应用"
+
+#: admin/applist/admin.py:462 admin/applist/forms.py:253
+#: admin/applist/models.py:111
+msgid "Game"
+msgstr "游戏"
+
+#: admin/applist/admin.py:470 admin/applist/forms.py:260
+#: admin/applist/models.py:121
+msgid "Reading"
+msgstr "阅读"
+
+#: admin/applist/admin.py:478 admin/applist/forms.py:267
+#: admin/applist/models.py:131
+msgid "Music & Video"
+msgstr "影音"
+
+#: admin/applist/forms.py:14
+msgid "kuwan price"
+msgstr "酷玩价格"
+
+#: admin/applist/forms.py:14
+msgid "the price of kuwan item."
+msgstr "酷玩列表的价格."
+
+#: admin/applist/forms.py:15
+msgid "editor category"
+msgstr "编辑分类"
+
+#: admin/applist/forms.py:15
+msgid "input editor category name."
+msgstr "请输入编辑分类名."
+
+#: admin/applist/forms.py:16
+msgid "value added price"
+msgstr "增值价格"
+
+#: admin/applist/forms.py:16
+msgid "Please input value-added price."
+msgstr "请输入增值服务价格"
+
+#: admin/applist/forms.py:17
+msgid "app desc"
+msgstr "应用描述"
+
+#: admin/applist/forms.py:17
+msgid "Please input app description."
+msgstr "请输入应用描述."
+
+#: admin/applist/forms.py:45 app/forms.py:71
+msgid "App should not be None."
+msgstr "应用不应该为空"
+
+#: admin/applist/forms.py:48 admin/applist/forms.py:185
+#: admin/applist/forms.py:236 app/forms.py:114 app/forms.py:137
+#: app/forms.py:160 push/forms.py:94 push/forms.py:114
+msgid "Please select reviewed application."
+msgstr "请选择已通过审核的应用"
+
+#: admin/applist/forms.py:53
+#, python-format
+msgid "item with app id with %(id)s exists in the list"
+msgstr "应用ID为 %(id)s 的列表项已经存在."
+
+#: admin/applist/forms.py:65 admin/applist/forms.py:132
+#: admin/applist/forms.py:157
+msgid "type"
+msgstr "类型"
+
+#: admin/applist/forms.py:96
+msgid "This field should not be None."
+msgstr "该字段是必填项."
+
+#: admin/applist/forms.py:100 admin/applist/forms.py:122
+#: admin/applist/forms.py:282 app/forms.py:107 promotion/forms.py:15
+msgid "Icon url and icon path can not both be None."
+msgstr "图片地址和图片路径不能同时为空."
+
+#: admin/applist/forms.py:104
+#, python-format
+msgid "item with type: %(type)s, attr: %(attr)s exists in the list"
+msgstr "类型为 %(type)s, 属性为 %(attr)s 的列表项已经存在."
+
+#: admin/applist/forms.py:133 admin/applist/forms.py:162
+msgid "title"
+msgstr "标题"
+
+#: admin/applist/forms.py:134
+msgid "rate"
+msgstr "评分"
+
+#: admin/applist/forms.py:135
+msgid "views count"
+msgstr "访问数"
+
+#: admin/applist/forms.py:136
+msgid "app icon url"
+msgstr "应用图标Url"
+
+#: admin/applist/forms.py:136
+msgid "Please input app icon url"
+msgstr "请应用图标Url."
+
+#: admin/applist/forms.py:146 admin/applist/forms.py:172 push/forms.py:87
+#: push/forms.py:99
+msgid "Input value should be an intger."
+msgstr "输入的值必须是整数."
+
+#: admin/applist/forms.py:158
+msgid "order ID"
+msgstr "订购ID"
+
+#: admin/applist/forms.py:159
+msgid ""
+"APP ID for app_details_page type, kuwan item id for tianyi_kuwan type, 1 for "
+"tianyi quan neng wan type."
+msgstr ""
+"如果类型为\"应用详情页\", 则属性填应用ID; 如果类型为\"酷玩列表\", 则属性填酷"
+"玩列表ID, 如果类型为\"全能玩\", 则属性填1"
+
+#: admin/applist/forms.py:160
+msgid "order URL"
+msgstr "订购URL"
+
+#: admin/applist/forms.py:160
+msgid "web page url of ordering"
+msgstr "订购网页地址"
+
+#: admin/applist/forms.py:161
+msgid "price"
+msgstr "价格"
+
+#: admin/applist/forms.py:161
+msgid "the price of app, kuwan item or quan neng wan."
+msgstr "请根据选择的类型填写APP、酷玩列表或者全能玩的价格."
+
+#: admin/applist/forms.py:162
+msgid ""
+"the title of app or kuwan item, or \"quan neng wan\" for tianyi quan neng "
+"wan type."
+msgstr ""
+"请根据选择的类型填写APP或者酷玩列表的标题，如果选择\"全能玩\"类型，直接填写"
+"\"全能玩\"即可."
+
+#: admin/applist/forms.py:190 admin/applist/forms.py:241 app/forms.py:142
+#: app/forms.py:165
+#, python-format
+msgid "item with app id %(id)s exists in the list"
+msgstr "应用ID为 %(id)s 的列表项已经存在."
+
+#: admin/applist/forms.py:233
+#, python-format
+msgid "Selected app is not belong to %(cate_name)s."
+msgstr "所选的应用不属于 %(cate_name)s 分类."
+
+#: admin/applist/models.py:18 admin/banner/models.py:19
+msgid "Banner Recommend"
+msgstr "Banner推荐"
+
+#: admin/applist/models.py:24 admin/applist/models.py:49
+#: admin/applist/models.py:59 admin/applist/models.py:69
+#: admin/applist/models.py:79 admin/applist/models.py:87
+#: admin/applist/models.py:95 admin/applist/models.py:105
+#: admin/applist/models.py:115 admin/applist/models.py:125
+#: admin/applist/models.py:135 admin/applist/models.py:143
+msgid "AppList"
+msgstr "应用列表"
+
+#: admin/applist/models.py:50
+msgid "Newest Recommendation"
+msgstr "首页推荐 - 飙升最快"
+
+#: admin/applist/models.py:51
+msgid "Newest Recommendations"
+msgstr "首页推荐 - 飙升最快"
+
+#: admin/applist/models.py:60
+msgid "Hottest Recommendation"
+msgstr "首页推荐 - 最热"
+
+#: admin/applist/models.py:61
+msgid "Hottest Recommendations"
+msgstr "首页推荐 - 最热"
+
+#: admin/applist/models.py:70
+msgid "Matchest Recommendation"
+msgstr "首页推荐 - 精品推荐"
+
+#: admin/applist/models.py:71
+msgid "Matchest Recommendations"
+msgstr "首页推荐 - 精品推荐"
+
+#: admin/applist/models.py:80
+msgid "HomeNew Recommendation"
+msgstr "首页推荐 - 首发"
+
+#: admin/applist/models.py:81
+msgid "HomeNew Recommendations"
+msgstr "首页推荐 - 首发"
+
+#: admin/applist/models.py:88
+msgid "Prepared Application"
+msgstr "必备应用"
+
+#: admin/applist/models.py:89
+msgid "Prepared Applications"
+msgstr "必备应用"
+
+#: admin/applist/models.py:96
+msgid "Boot Application"
+msgstr "装机必备"
+
+#: admin/applist/models.py:97
+msgid "Boot Applications"
+msgstr "装机必备"
+
+#: admin/applist/models.py:106 admin/applist/models.py:107
+msgid "Top Application"
+msgstr "排行 - 应用"
+
+#: admin/applist/models.py:116 admin/applist/models.py:117
+msgid "Top Game"
+msgstr "排行 - 游戏"
+
+#: admin/applist/models.py:126 admin/applist/models.py:127
+msgid "Top Reading"
+msgstr "排行 - 阅读"
+
+#: admin/applist/models.py:136 admin/applist/models.py:137
+msgid "Top Music & Video"
+msgstr "排行 - 影音"
+
+#: admin/applist/models.py:144 admin/applist/models.py:145
+msgid "TianYi KuWan"
+msgstr "天翼酷玩"
+
+#: admin/appreviews/models.py:14 admin/appreviews/models.py:16
+msgid "App Reviews"
+msgstr "应用评论"
+
+#: admin/appreviews/models.py:15
+msgid "App Review"
+msgstr "应用评论"
+
+#: admin/cateapps/admin.py:28 admin/cateapps/admin.py:30
+msgid "insert"
+msgstr "插入"
+
+#: admin/cateapps/models.py:36
+msgid "Category Apps"
+msgstr "分类应用"
+
+#: admin/cateapps/templates/admin/cateapps/change_list.html:8
+#: admin/newapps/templates/admin/newapps/change_list.html:11
+#: admin_tools/theming/templates/admin/change_list.html:69
+#: push/templates/admin/push/change_list.html:11
+#, python-format
+msgid "Add %(name)s"
+msgstr "添加 %(name)s"
+
+#: admin/cateapps/templates/admin/cateapps/change_list.html:15
+#: admin/newapps/templates/admin/newapps/change_list.html:18
+#: admin_tools/theming/templates/admin/change_list.html:76
+#: push/templates/admin/push/change_list.html:18
+#, python-format
+msgid "Sync %(name)s to production"
+msgstr "同步 %(name)s 到线上"
+
+#: admin/category/models.py:11 admin/category/models.py:12
+msgid "App Category"
+msgstr "应用分类"
+
+#: admin/category/models.py:13
+msgid "App Categorys"
+msgstr "应用分类"
+
+#: admin/newapps/admin.py:27 app/admin.py:235
+msgid "Category"
+msgstr "分类"
+
+#: admin/newapps/admin.py:75 admin/newapps/admin.py:89
+#: admin/newapps/admin.py:100
+msgid "Version"
+msgstr "版本"
+
+#: admin/newapps/admin.py:78 admin/newapps/admin.py:92
+#: admin/newapps/admin.py:103
+msgid "Package"
+msgstr "程序包"
+
+#: admin/newapps/admin.py:109
+msgid "ReadOnly"
+msgstr "只读"
+
+#: admin/newapps/admin.py:184
+msgid "copycat"
+msgstr "模仿者"
+
+#: admin/newapps/forms.py:21 app/forms.py:79
+msgid "Unpack APK file failed."
+msgstr "解析 APK 文件失败."
+
+#: admin/newapps/forms.py:25
+#, python-format
+msgid ""
+"The application with same package name exists, %(app_name)s%(is_hided)s, "
+"app_id: %(app_id)d."
+msgstr "同包名的程序已经存在, %(app_name)s%(is_hided)s, 应用ID: %(app_id)d"
+
+#: admin/newapps/forms.py:26 app/forms.py:86
+msgid "(hided)"
+msgstr "(已删除)"
+
+#: admin/newapps/forms.py:28 app/forms.py:91
+msgid "Save APK file failed."
+msgstr "保存 APK 文件失败."
+
+#: admin/newapps/models.py:15 admin/newapps/models.py:25
+#: admin/newapps/models.py:35 admin/newapps/models.py:43
+msgid "New Apps"
+msgstr "新增应用"
+
+#: admin/newapps/models.py:16 admin/newapps/models.py:17
+msgid "Manually Added"
+msgstr "手动添加"
+
+#: admin/newapps/models.py:26 admin/newapps/models.py:27
+msgid "Auto Crawled"
+msgstr "自动爬取"
+
+#: admin/newapps/models.py:36 admin/newapps/models.py:37
+msgid "Developer Uploaded"
+msgstr "开发者上传"
+
+#: admin/newapps/models.py:44 admin/newapps/models.py:45
+msgid "auto mask off app"
+msgstr "屏蔽应用包名"
+
+#: admin/newapps/templates/admin/newapps/change_list.html:25
+#: admin_tools/theming/templates/admin/change_list.html:83
+#: push/templates/admin/push/change_list.html:25
+#, python-format
+msgid "Sync %(name)s from production"
+msgstr "从线上更新 %(name)s"
+
+#: admin/newapps/templates/admin/newapps/change_list.html:32
+msgid "Review All Apps"
+msgstr "审核全部应用"
+
+#: admin/newapps/templates/admin/newapps/stacked.html:66
+#: app/templates/admin/app/preview_tabular_back.html:110
+#: app/templates/admin/app/tabular.html:117
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "添加 %(verbose_name)s"
+
+#: admin/newapps/templates/admin/newapps/stacked.html:69
+#: app/templates/admin/app/preview_tabular_back.html:113
+#: app/templates/admin/app/tabular.html:120
+msgid "Remove"
+msgstr "删除"
+
+#: admin/riskapps/models.py:14 admin/riskapps/models.py:16
+msgid "Risk Apps"
+msgstr "风险应用"
+
+#: admin/riskapps/models.py:15
+msgid "Risk App"
+msgstr "风险应用"
+
+#: admin/subject/admin.py:22
+msgid "subject items"
+msgstr "专题列表项"
+
+#: admin/subject/models.py:10 admin/subject/models.py:18
+msgid "Subject Management"
+msgstr "专题管理"
+
+#: admin/subject/models.py:11
+msgid "Subject"
+msgstr "应用专题"
+
+#: admin/subject/models.py:12
+msgid "Subjects"
+msgstr "应用专题"
+
+#: admin/subject/models.py:19
+msgid "Activity"
+msgstr "活动专题"
+
+#: admin/subject/models.py:20
+msgid "Activities"
+msgstr "活动专题"
+
+#: admin/updateapps/models.py:14 admin/updateapps/models.py:25
+msgid "App Updates"
+msgstr "应用更新"
+
+#: admin/updateapps/models.py:15 admin/updateapps/models.py:16
+msgid "Update without Screenshots"
+msgstr "无截图更新"
+
+#: admin/updateapps/models.py:26 admin/updateapps/models.py:27
+msgid "Update with Screenshots"
+msgstr "有截图更新"
+
+#: admin/usermanagement/admin.py:11
+msgid "addition action"
+msgstr "添加操作"
+
+#: admin/usermanagement/admin.py:12
+msgid "change action"
+msgstr "修改操作"
+
+#: admin/usermanagement/admin.py:13
+msgid "deletion action"
+msgstr "删除操作"
+
+#: admin/usermanagement/admin.py:79
+msgid "action flag"
+msgstr "动作标志"
+
+#: admin/usermanagement/models.py:11 admin/usermanagement/models.py:20
+msgid "User Management"
+msgstr "用户管理"
+
+#: admin/usermanagement/models.py:12
+msgid "Group"
+msgstr "用户组"
+
+#: admin/usermanagement/models.py:13
+msgid "Groups"
+msgstr "用户组"
+
+#: admin/usermanagement/models.py:21
+msgid "User"
+msgstr "用户"
+
+#: admin/usermanagement/models.py:22
+msgid "Users"
+msgstr "用户"
+
+#: admin/utilities/models.py:14 admin/utilities/models.py:22
+#: admin/utilities/models.py:29 admin/utilities/models.py:37
+msgid "Utilities"
+msgstr "实用工具"
+
+#: admin/utilities/models.py:16 admin_tools/dashboard/modules.py:409
+#: admin_tools/menu/menus.py:103
+msgid "Applications"
+msgstr "应用"
+
+#: admin/utilities/models.py:23
+msgid "AppVersion"
+msgstr "应用版本"
+
+#: admin/utilities/models.py:24
+msgid "AppVersions"
+msgstr "应用版本"
+
+#: admin/utilities/models.py:30
+msgid "PopAppVersion"
+msgstr "应用版本"
+
+#: admin/utilities/models.py:31
+msgid "PopAppVersions"
+msgstr "应用版本"
+
+#: admin/utilities/models.py:38
+msgid "Subject Item"
+msgstr "专题列表项"
+
+#: admin/utilities/models.py:39
+msgid "Subject Items"
+msgstr "专题列表项"
+
+#: admin_tools/dashboard/dashboards.py:81 admin_tools/menu/menus.py:100
+msgid "Dashboard"
+msgstr "管理面板"
+
+#: admin_tools/dashboard/dashboards.py:224
+msgid "Quick links"
+msgstr "快捷链接"
+
+#: admin_tools/dashboard/dashboards.py:230
+msgid "Return to site"
+msgstr "返回主站"
+
+#: admin_tools/dashboard/dashboards.py:231
+#: admin_tools/theming/templates/admin/base.html:50
+msgid "Change password"
+msgstr "更改密码"
+
+#: admin_tools/dashboard/dashboards.py:233
+#: admin_tools/theming/templates/admin/base.html:57
+msgid "Log out"
+msgstr "注销"
+
+#: admin_tools/dashboard/dashboards.py:250
+#: admin_tools/dashboard/dashboards.py:305
+#: admin_tools/dashboard/modules.py:562
+msgid "Recent Actions"
+msgstr "最近的操作"
+
+#: admin_tools/dashboard/dashboards.py:254
+msgid "Latest Django News"
+msgstr "Django最新消息"
+
+#: admin_tools/dashboard/dashboards.py:261
+msgid "Support"
+msgstr "支持"
+
+#: admin_tools/dashboard/dashboards.py:264
+msgid "Django documentation"
+msgstr "Django文档"
+
+#: admin_tools/dashboard/dashboards.py:269
+msgid "Django \"django-users\" mailing list"
+msgstr "Django \"django-users\" 邮件列表"
+
+#: admin_tools/dashboard/dashboards.py:274
+msgid "Django irc channel"
+msgstr "Django irc频道"
+
+#: admin_tools/dashboard/modules.py:338
+msgid "Links"
+msgstr "链接"
+
+#: admin_tools/dashboard/modules.py:615
+msgid "No recent actions."
+msgstr "最近没有操作"
+
+#: admin_tools/dashboard/modules.py:661
+msgid "RSS Feed"
+msgstr "RSS源"
+
+#: admin_tools/dashboard/templates/admin/app_index.html:9
+#: admin_tools/theming/templates/admin/base.html:64
+#: admin_tools/theming/templates/admin/change_form.html:19
+#: admin_tools/theming/templates/admin/change_list.html:43
+#: admin_tools/theming/templates/registration/logged_out.html:4
+#: analysis/templates/analysis_base.html:104
+#: analysis/templates/reporting.html:103 offline/templates/offline.html:102
+#: push/templates/admin/push/change_form.html:23
+msgid "Home"
+msgstr "主页"
+
+#: admin_tools/dashboard/templates/admin/app_index.html:11
+#, python-format
+msgid "%(name)s"
+msgstr "%(name)s"
+
+#: admin_tools/dashboard/templates/admin_tools/dashboard/dashboard.html:55
+msgid "Modules"
+msgstr "模块"
+
+#: admin_tools/dashboard/templates/admin_tools/dashboard/modules/app_list.html:13
+#: admin_tools/dashboard/templates/admin_tools/dashboard/modules/model_list.html:11
+#: admin_tools/theming/templates/admin/change_form.html:24
+#: push/templates/admin/push/change_form.html:26
+msgid "Add"
+msgstr "增加"
+
+#: admin_tools/dashboard/templates/admin_tools/dashboard/modules/app_list.html:14
+#: admin_tools/dashboard/templates/admin_tools/dashboard/modules/model_list.html:12
+msgid "Change"
+msgstr "修改"
+
+#: admin_tools/menu/items.py:326
+msgid "Bookmarks"
+msgstr "书签"
+
+#: admin_tools/menu/menus.py:107
+msgid "Administration"
+msgstr "管理"
+
+#: admin_tools/menu/templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django网站管理"
+
+#: admin_tools/menu/templates/admin/base_site.html:16
+msgid "Django administration"
+msgstr "Django管理"
+
+#: admin_tools/menu/templates/admin_tools/menu/menu.html:32
+msgid "Please enter a name for the bookmark"
+msgstr "请输入书签的名字"
+
+#: admin_tools/theming/leftnav.py:101
+msgid "Reporting"
+msgstr "统计报表"
+
+#: admin_tools/theming/templates/admin/base.html:42
+msgid "Documentation"
+msgstr "文档"
+
+#: admin_tools/theming/templates/admin/change_form.html:71
+#: admin_tools/theming/templates/admin/change_list.html:93
+#: admin_tools/theming/templates/admin/login.html:17
+#: push/templates/admin/push/change_form.html:53
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "请更正下面的错误。"
+msgstr[1] "请更正下面的错误。"
+
+#: admin_tools/theming/templates/admin/change_list.html:102
+msgid "Filter"
+msgstr "条件筛选"
+
+#: admin_tools/theming/templates/admin/filter.html:2
+#, python-format
+msgid " By %(filter_title)s "
+msgstr " 以 %(filter_title)s"
+
+#: admin_tools/theming/templates/admin/login.html:33
+msgid "Username:"
+msgstr "用户名："
+
+#: admin_tools/theming/templates/admin/login.html:33
+msgid "Username"
+msgstr "用户名"
+
+#: admin_tools/theming/templates/admin/login.html:37
+msgid "Password:"
+msgstr "密码："
+
+#: admin_tools/theming/templates/admin/login.html:37
+msgid "Password"
+msgstr "密码"
+
+#: admin_tools/theming/templates/admin/login.html:43
+msgid "Verify Code:"
+msgstr "验证码:"
+
+#: admin_tools/theming/templates/admin/login.html:43
+msgid "Verify Code"
+msgstr "验证码"
+
+#: admin_tools/theming/templates/admin/login.html:47
+msgid "Log in"
+msgstr "登录"
+
+#: admin_tools/theming/templates/admin/pagination.html:12
+msgid "Show all"
+msgstr "显示全部"
+
+#: admin_tools/theming/templates/admin/pagination.html:13
+#: admin_tools/theming/templates/admin/submit_line.html:3
+msgid "Save"
+msgstr "保存"
+
+#: admin_tools/theming/templates/admin/submit_line.html:4
+msgid "Delete"
+msgstr "删除"
+
+#: admin_tools/theming/templates/admin/submit_line.html:5
+msgid "Save as new"
+msgstr "保存为新的"
+
+#: admin_tools/theming/templates/admin/submit_line.html:6
+msgid "Save and add another"
+msgstr "保存并增加另一个"
+
+#: admin_tools/theming/templates/admin/submit_line.html:7
+msgid "Save and continue editing"
+msgstr "保存并继续编辑"
+
+#: admin_tools/theming/templates/admin/submit_line.html:8
+msgid "Save and sync"
+msgstr "保存并同步"
+
+#: admin_tools/theming/templates/registration/logged_out.html:9
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "感谢您今天在本站花费一些宝贵时间。"
+
+#: admin_tools/theming/templates/registration/logged_out.html:11
+msgid "Log in again"
+msgstr "重新登录"
+
+#: admin_tools/theming/templatetags/admin_tools_pagination_tags.py:19
+msgid "next page"
+msgstr "下一页"
+
+#: admin_tools/theming/templatetags/admin_tools_pagination_tags.py:22
+msgid "prev page"
+msgstr "上一页"
+
+#: ajax_select/fields.py:231
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr "按下Ctrl，或者Mac的Command，选择多个."
+
+#: analysis/__init__.py:6
+msgid "Product Charts"
+msgstr "产品图表"
+
+#: analysis/__init__.py:7
+msgid "Featured Charts"
+msgstr "首页图表"
+
+#: analysis/__init__.py:8
+msgid "TopApps Charts"
+msgstr "排行图表"
+
+#: analysis/__init__.py:9
+msgid "Category Charts"
+msgstr "分类图表"
+
+#: analysis/__init__.py:10
+msgid "Download Page Charts"
+msgstr "下载量图表"
+
+#: analysis/__init__.py:11
+msgid "Topic Charts"
+msgstr "专题图表"
+
+#: analysis/__init__.py:12
+msgid "User Data Charts"
+msgstr "用户数据图表"
+
+#: analysis/__init__.py:13
+msgid "Search Charts"
+msgstr "搜索图表"
+
+#: analysis/__init__.py:14
+msgid "Detail Page Charts"
+msgstr "详情页面图表"
+
+#: analysis/__init__.py:15
+msgid "Push Message Charts"
+msgstr "消息推送报表"
+
+#: app/admin.py:138 app/admin.py:244
+msgid "Tianyi Status"
+msgstr "天翼状态"
+
+#: app/admin.py:182
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was changed successfully, and successfully synced "
+"to production."
+msgstr "%(name)s \"%(obj)s\" 修改成功, 并成功同步到线上."
+
+#: app/admin.py:232
+msgid "App Label"
+msgstr "应用标签"
+
+#: app/admin.py:238
+msgid "Versions"
+msgstr "版本"
+
+#: app/admin.py:273
+#, python-format
+msgid "Sub category should not be None for object: %(obj)s"
+msgstr "二级分类不能为空： %(obj)s"
+
+#: app/admin.py:275
+#, python-format
+msgid "Current version should not be None for object: %(obj)s"
+msgstr "当前版本不能为空： %(obj)s"
+
+#: app/admin.py:277
+#, python-format
+msgid "You can't publish not approved %(model)s: %(obj)s"
+msgstr "不能发布未审核通过的 %(model)s: %(obj)s"
+
+#: app/admin.py:291 app/admin.py:293
+msgid "view detail"
+msgstr "查看详情"
+
+#: app/admin.py:309 promotion/admin.py:27 promotion/admin.py:68
+msgid "Type"
+msgstr "类型"
+
+#: app/admin.py:566
+msgid "is new version"
+msgstr "是否最新版本"
+
+#: app/forms.py:21
+msgid "Please input your off shelf reason."
+msgstr "请输入下架原因!"
+
+#: app/forms.py:44
+msgid "Parent category should be None when level is Category."
+msgstr "一级分类的 上层分类 应该为空"
+
+#: app/forms.py:47
+msgid "Parent category should not be None when level is Sub Category."
+msgstr "二级分类的 上层分类 不应该为空"
+
+#: app/forms.py:50
+msgid "The level of parent category is Sub Category."
+msgstr "上层分类是一个二级分类"
+
+#: app/forms.py:84
+#, python-format
+msgid ""
+"Upload APK's package name is different from app's package name, please add "
+"new version to app:                                     %(app_name)s"
+"%(is_hided)s, app_id: %(app_id)d."
+msgstr ""
+"上传的APK包名不一致, 请添加版本到：%(app_name)s%(is_hided)s, ID: %(app_id)d."
+
+#: app/forms.py:88
+msgid ""
+"Upload APK's package name is different from app's package name, please add "
+"new application."
+msgstr "上传的APK包名不一致, 请创建一个新的应用."
+
+#: app/forms.py:119 push/forms.py:122
+msgid "Please select reviewed subject."
+msgstr "请选择已通过审核的专题"
+
+#: app/forms.py:151
+msgid "boot app type"
+msgstr "装机必备类别"
+
+#: app/forms.py:151
+msgid "select add new type to add new one."
+msgstr "选择\"添加新类别\"增加一个新的类别"
+
+#: app/templates/admin/app/preview_tabular_back.html:15
+#: app/templates/admin/app/tabular.html:15
+msgid "Delete?"
+msgstr "确认删除?"
+
+#: offline/views.py:32
+msgid "current_version_name"
+msgstr "当前版本"
+
+#: offline/views.py:32
+msgid "category_name"
+msgstr "分类"
+
+#: offline/views.py:32
+msgid "clicks_count"
+msgstr "点击数"
+
+#: offline/views.py:33
+msgid "downloads_count"
+msgstr "下载数"
+
+#: offline/views.py:33
+msgid "is_published"
+msgstr "是否已发布"
+
+#: offline/views.py:33
+msgid "sync_status"
+msgstr "是否已同步"
+
+#: offline/views.py:37
+msgid "true"
+msgstr "是"
+
+#: offline/views.py:37
+msgid "false"
+msgstr "否"
+
+#: promotion/admin.py:24 promotion/admin.py:65
+msgid "Date"
+msgstr "日期"
+
+#: promotion/admin.py:42 promotion/admin.py:83
+msgid "Fail to pre save model."
+msgstr ""
+
+#: promotion/forms.py:32
+msgid "Url and path can not both be None."
+msgstr "地址和路径不能同时为空."
+
+#: push/admin.py:23
+msgid "Invalid Date"
+msgstr "无效日期"
+
+#: push/admin.py:33
+msgid "Targeting"
+msgstr "目标用户"
+
+#: push/forms.py:15
+msgid "target message group"
+msgstr "消息组"
+
+#: push/forms.py:15
+msgid "if no one is selected, means no group"
+msgstr ""
+"直接推送：消息会在给定的时间里尽快推送给所有用户智能分发：所有在智能分发组的"
+"消息，都会根据用户信息，收到的消息情况做自能跳转。适合场景：应用推广等"
+
+#: push/forms.py:16
+msgid "target device"
+msgstr "用户设备"
+
+#: push/forms.py:17
+msgid ""
+"use \",\" to split when add more than one device, if no one is targeted, "
+"means all devices. example: zte,htc"
+msgstr "使用 , 分隔添加多个设备，如果不填，则为所有设备型号. 如: zte,htc"
+
+#: push/forms.py:18
+msgid "target system version"
+msgstr "系统版本"
+
+#: push/forms.py:19
+msgid ""
+"use \",\" to split when add more than one system version, if no one is "
+"targeted, means all system versions. example: 15,16"
+msgstr "使用 , 分隔添加多个系统版本，如果不填，则为所有系统版本. 如: 15,16"
+
+#: push/forms.py:20
+msgid "target screen size"
+msgstr "屏幕分辨率"
+
+#: push/forms.py:21
+msgid ""
+"use \",\" to split when add more than one screen size, if no one is "
+"targeted, means all screen sizes. example: 800x600,1024x800"
+msgstr ""
+"使用 , 分隔添加多个屏幕分辨率，如果不填，则为所有屏幕分辨率. 如: "
+"800x600,1024x800"
+
+#: push/forms.py:23
+msgid "target operator"
+msgstr "运营商"
+
+#: push/forms.py:23
+msgid "if no one is selected, means all operators"
+msgstr "如果一个都不选，则为所有运营商"
+
+#: push/forms.py:25
+msgid "target city"
+msgstr "地域"
+
+#: push/forms.py:25
+msgid "if no one is selected, means all cities"
+msgstr "如果一个都不选，则为所有城市"
+
+#: push/forms.py:27
+msgid "target installed app"
+msgstr "已安装应用"
+
+#: push/forms.py:29
+msgid "target uninstalled app"
+msgstr "未安装应用"
+
+#: push/forms.py:31
+msgid "target recently installed app"
+msgstr "最近安装应用"
+
+#: push/forms.py:33
+msgid "target frequently used app"
+msgstr "常用应用"
+
+#: push/forms.py:35
+msgid "target activated app"
+msgstr "未激活应用"
+
+#: push/forms.py:37
+msgid "target expired app"
+msgstr "过期应用"
+
+#: push/forms.py:39
+msgid "target gender"
+msgstr "性别"
+
+#: push/forms.py:39
+msgid "if no one is selected, means all genders"
+msgstr "如果一个都不选，则为所有性别"
+
+#: push/forms.py:41
+msgid "target marraige status"
+msgstr "婚恋状态"
+
+#: push/forms.py:41
+msgid "if no one is selected, means all marriage status"
+msgstr "如果一个都不选，则为所有婚恋状态"
+
+#: push/forms.py:43
+msgid "target age"
+msgstr "年龄段"
+
+#: push/forms.py:43
+msgid "if no one is selected, means all ages"
+msgstr "如果一个都不选，则为所有年龄段"
+
+#: push/forms.py:44
+msgid "target keyword"
+msgstr "用户关键字"
+
+#: push/forms.py:45
+msgid "target keyword help text"
+msgstr ""
+"用户关键字通过用户安装的应用，市场使用记录等数据分析得出。例如，如果用户经常"
+"使用微博，微博会成为用户的一个关键字；对于经常玩游戏的用户，游戏也是一个关键"
+"字"
+
+#: push/forms.py:47
+msgid "target phone"
+msgstr "手机号"
+
+#: push/forms.py:47
+msgid ""
+"target phone number, if no one is targeted, means all, example: "
+"123456789,987654321"
+msgstr ""
+"使用, 分隔添加多个手机号，如果不填，则不根据手机号过滤. 如: "
+"15184477890,18957843890"
+
+#: push/forms.py:49
+msgid "repeat time (launch background)"
+msgstr "重复次数"
+
+#: push/forms.py:49
+msgid "please input an integer."
+msgstr "用于\"后台打开应用命令\", 请输入一个整数."
+
+#: push/forms.py:50
+msgid "action hour (launch background)"
+msgstr "操作时间"
+
+#: push/forms.py:50
+msgid "please input an integer, should be in [0, 23]."
+msgstr "用于\"后台打开应用命令\", 请输入一个在[0, 23]内的整数."
+
+#: push/forms.py:91 push/forms.py:111
+msgid "Please select an exist application."
+msgstr "请选择一个存在的应用"
+
+#: push/forms.py:119
+msgid "Please select an exist subject."
+msgstr "请选择一个存在的专题"
+
+#: statistics/admin.py:48 statistics/admin.py:66 statistics/admin.py:84
+#: statistics/admin.py:102 statistics/admin.py:120 statistics/admin.py:138
+#: statistics/admin.py:156 statistics/admin.py:174 statistics/admin.py:192
+#: statistics/models.py:15 statistics/models.py:24 statistics/models.py:33
+#: statistics/models.py:42 statistics/models.py:51 statistics/models.py:60
+#: statistics/models.py:69 statistics/models.py:78 statistics/models.py:87
+msgid "Statistics"
+msgstr "统计信息"
+
+#: statistics/models.py:16 statistics/models.py:17
+msgid "Category Stats"
+msgstr "分类统计"
+
+#: statistics/models.py:25 statistics/models.py:26
+msgid "Application Stats"
+msgstr "应用统计"
+
+#: statistics/models.py:34 statistics/models.py:35
+msgid "Application Version Stats"
+msgstr "应用版本统计"
+
+#: statistics/models.py:43 statistics/models.py:44
+msgid "Category Foucs Image Stats"
+msgstr "Banner推荐统计"
+
+#: statistics/models.py:52 statistics/models.py:53
+msgid "Category Subject Stats"
+msgstr "应用专题统计"
+
+#: statistics/models.py:61 statistics/models.py:62
+msgid "Category Recommend Application Stats"
+msgstr "推荐应用统计"
+
+#: statistics/models.py:70 statistics/models.py:71
+msgid "Prepared Application Stats"
+msgstr "必备应用统计"
+
+#: statistics/models.py:79 statistics/models.py:80
+msgid "Boot Application Stats"
+msgstr "装机必备统计"
+
+#: statistics/models.py:88 statistics/models.py:89
+msgid "Top Application Stats"
+msgstr "装机必备统计"
+
+#: update/admin.py:31
+msgid "Update Info"
+msgstr "更新信息"
+
+#: update/forms.py:21
+msgid "Size can not be empty when use download_url."
+msgstr "外部下载地址包大小不能为空！"
+
+#~ msgid "app icon path"
+#~ msgstr "应用图标路径"
+
+#~ msgid "At least input one app icon."
+#~ msgstr "应用图标地址至少输入一个"
+
+#~ msgid "Ad Charts"
+#~ msgstr "广告图表"
+
+#~ msgid "Download url and download path can not both be None."
+#~ msgstr "下载地址和下载路径不能同时为空."
+
+#~ msgid "hyper link of donload address"
+#~ msgstr "下载地址"
+
+#~ msgid "Review Status"
+#~ msgstr "审核状态"
+
+#~ msgid "t_id"
+#~ msgstr "天翼ID"
+
+#~ msgid "t_chargemode"
+#~ msgstr "天翼收费模式"
+
+#~ msgid "reviews_count"
+#~ msgstr "评论数"
+
+#~ msgid "has_icon"
+#~ msgstr "有无预览图"
+
+#~ msgid "Area"
+#~ msgstr "展示区域"
+
+#~ msgid "Recommend type should not be None."
+#~ msgstr "推荐类型不能为空."
+
+#~ msgid "Category should not be None."
+#~ msgstr "分类不应该为空"
+
+#~ msgid "if no one is selected, means all devices"
+#~ msgstr "如果一个都不选，则为所有设备型号"
+
+#~ msgid "if no one is selected, means all system versions"
+#~ msgstr "如果一个都不选，则为所有系统版本"
+
+#~ msgid "if no one is selected, means all screen sizes"
+#~ msgstr "如果一个都不选，则为所有屏幕分辨率"

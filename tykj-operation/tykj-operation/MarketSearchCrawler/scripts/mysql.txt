@@ -1,0 +1,26 @@
+#Mysql master-slave
+#Create user market for both master and slave
+grant all on market.* to 'market'@'192.168.87.105' identified by 'P@55word';
+grant all on market.* to 'market'@'192.168.87.204' identified by 'P@55word';
+
+#edit master my.cnf
+server-id               = 1
+log_bin                 = /var/log/mysql/mysql-bin.log
+binlog_do_db            = market
+binlog-ignore-db		= mysql
+
+#add replication user for slave in master mysql
+grant replication slave on *.* to 'repuser'@'192.168.87.105' identified by 'P@55word';
+
+#edit slave my.cnf
+server-id               = 2
+log_bin                 = /var/log/mysql/mysql-bin.log
+master-host             = 192.168.87.204
+master-user             = repuser
+master-password         = P@55word
+replicate-do-db         = market
+replicate-ignore-db     = mysql
+
+
+#grant file privilege
+grant file on *.* to 'market'@'%';

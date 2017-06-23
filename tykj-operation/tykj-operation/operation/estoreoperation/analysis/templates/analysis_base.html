@@ -1,0 +1,267 @@
+{% extends "admin/base_site.html" %}
+{% load adminmedia admin_list i18n %}
+
+{% block extrastyle %}
+  {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+    <link rel="stylesheet" href="/static/admin_tools/css/menu.css" type="text/css" media="screen, projection"/>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/static/admin_tools/css/menu-ie.css" type="text/css" media="screen, projection"/>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/changelists.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/admin_tools/css/theming.css" />
+    <link rel="stylesheet" href="/static/admin_tools/css/leftnav.css" type="text/css" media="screen, projection"/>
+    <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery.easydrag.handler.beta2.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery-ui.js"></script>
+	<script src='/static/admin_tools/js/jquery/jquery.cookie.min.js'></script>
+	<script src="/static/analysis/js/highcharts.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/analysis/css/jquery-ui-1.10.0.custom.min.css" />
+    <script type="text/javascript">
+        function strDate(date) {
+            return date.getFullYear() + "-" +
+                (date.getMonth() + 1) + "-" +
+                date.getDate();
+        }
+    </script>
+	<style type="text/css">
+        #f{position: absolute;right: 13px;top: 4px;width: 224px;height: 26px;overflow: hidden;background: url(/static/analysis/images/double_picker.jpg);}
+        #f span{position: absolute;top: 1px;left: 0;height: 26px;width: 200px;line-height: 26px;font-size: 12px;font-weight: bold;color: #555;text-align: center;}
+        #f a{display: block;position: absolute;top: 0;right: 0;width: 26px;height: 26px;text-decoration: none;text-indent: -3000px;}
+        #c {position: absolute;top: 33px;right: 12px;height: 230px;width: 491px;overflow: hidden;background: rgb(74, 146, 194);z-index: 999}
+        #content-main ul{float: left;height: auto;}
+        .tag_cloud{position:absolute;width: 100%;margin: 10px 0;padding: 10px 0;border: 1px solid #ccc;background-color: #f0f0f0;z-index: 999;}
+        .tag_cloud a{display: block;padding: 7px 20px;box-shadow: 0 0 1px #000;color:#000;font-size: 12px;background: #fff;}
+        .tag_cloud a:hover { background: #cbcbcb;}
+        .tag_cloud .selected_link{background: #0088d1;color:#fff;}
+        .tag_cloud li{display: block;float: left;height: 32px;margin: 5px 10px;padding-left: 22px;list-style: none;border-radius: 2px;color: #666666;line-height: 19px;}
+        #content-main h3{display: inline-block;margin-left: 7px;padding-left: 5px;width: 105px;height: 25px;border: 1px solid #ccc;color: #555555;line-height: 25px;font-weight: normal;font-size: 12px;background: #fff url(/static/analysis/images/nav_pic.png) no-repeat 93px 10px;cursor: pointer;}
+        .close_date{position: absolute;right: 250px;top: -3px;}
+        #sel{display: none;position: absolute;right: 250px;top: 118px;width: 121px;padding: 0;margin: 0;background-color: #fff;z-index: 1000;}
+        #sel li{height: 24px;padding:0 0 0 5px;list-style:none;}
+        #sel li a{display: block;margin: 0 5px;overflow: hidden;line-height: 24px;text-overflow: ellipsis;white-space: nowrap;}
+        .selected{padding: 0;margin: 0;border-left: 0;color:#fff;background-color: #008cd1;}
+        .selected a{color: #fff;}
+        #content-main td{border-right: 1px solid #eee;}
+        .datepickerContainer {background: #eaf4fd;}
+        .datepickerContainer td{border: 2px solid #fff;}
+        div.datepicker a {color: #2d6c9f;}
+        td.datepickerNotInMonth a {color: rgb(0, 0, 0);}
+        tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {background: #EAF4FD;}
+        tbody.datepickerDays td.datepickerSelected {background: #51BB56;}
+        .datepickerBorderT,.datepickerBorderB,.datepickerBorderR,.datepickerBorderL,.datepickerBorderTR,.datepickerBorderTL,.datepickerBorderBR,.datepickerBorderBL{display: none;}
+        #changelist .page {height: 35px;padding-top: 20px;padding-left: 10px;border-top: none;border-bottom: none;letter-spacing: 1px;color: #666;overflow: hidden;line-height: 25px;background: #fff;}
+        .page a {display: inline-block;height: 25px;margin: 0 4px;padding: 0 9px;border: 1px solid #e6e6e6;vertical-align: top;text-align: center;color: #126ea2;cursor: pointer;}
+        .page a:hover {color: white;background: #5b80b2;border-color: #036;}
+		.results #tb tr:nth-child(odd) {background-color:#f6f6f6;}   
+        #changelist .page .on{border: none;}
+        #changelist .page #last {width: auto;padding: 0 7px 0 18px;margin-left: 15px;}
+        #changelist .page #next {width: auto;padding: 0 20px 0 7px;margin-right: 20px;}
+        #mydatepicker{display: block;position: absolute;right: -2px;top: 121px;padding: 5px;border: 1px solid #CCCCCC;border-radius: 3px 3px 3px 3px;box-shadow: 1px 1px 2px #CCCCCC;background: #FFFFFF;z-index: 2;}
+	#tb .disabled,#content .hidden,.noChartTit #chartKind,#tableKind,#search_block{display: none;}
+        a #next:hover,a #last:hover{border-color: #036;color: #036;background: #5b80b2;}
+        #date_part{float: left;margin:0 5px;}
+        .date_input{width: 135px;margin-bottom: 10px;margin-bottom: 4px;}
+                .bar_title{height: 30px;padding-left: 12px;line-height: 30px;color: black;font-size: 14px;}
+        .table_btn{position: absolute;height: 26px;color: #000;background: #f2f2f2;}
+		.changeSource{position:absolute;top: -23px;right: 138px;}
+		.noChartTit {height:35px;overflow:hidden}
+		.noChartTit #tableKind{display:block;}
+        .showLoading{position:fixed;display:none;width: 80px;height: 33px;padding-left: 41px;line-height: 33px;margin-top:-33px;left:50%;top:50%;background:url(/static/analysis/images/loading.gif) no-repeat 0 0;z-index:100}
+		.version{position: absolute;top: -30px;right: 0px;width: 127px;border: 1px solid #ccc;border-bottom:none;background-color: #fff;z-index:1005;}
+		.platform:nth-child(2) {right:443px}
+		.platform:nth-child(3) {right:580px}
+		.platform:nth-child(4) {right:716px}
+		.platform:nth-child(5) {right:849px}
+		.platform{position: absolute;top: 2px;right:443px;width: 127px;border: 1px solid #ccc;border-bottom: none;background-color: #fff;z-index: 1012;}
+		.platform .main,.version .main{display:none;border-bottom:1px solid #ccc;}
+		.platform .show,.version .show{height: 30px;padding-left: 5px;padding-right: 25px;border-bottom: 1px solid #ccc;font-size: 13px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;background:url(/static/analysis/images/nav_pic.png) no-repeat 106px 13px;cursor:pointer;}
+		.version .checkall{height: 32px;margin: 0 5px;padding: 0 0 0 7px;border-bottom: 1px solid #ccc;line-height: 32px;}
+		.version .checkall input{margin-right:5px;}
+		.platform .list,.version .list{float:none !important;padding-left:12px;}
+		.platform .list{float:none !important;padding-left:0px}
+		.platform .list li,.version .list li{margin: 8px 0;list-style: none;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.platform .list li input,.version .list li input{margin-right: 2px;}
+		.platform .confooter,.version .confooter{padding-left: 2px;height: 38px;background-color: #f0f0f0;}
+		.platform .confooter span,.version .confooter span{display: inline-block;width: 52px;height: 26px;margin: 5px 4px;border: 1px solid #ccc;border-radius: 4px;text-align: center;line-height: 25px;cursor: pointer;}
+		.platform .confooter span:hover,.version .confooter span:hover {background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#E6E6E6));}
+		.version .confooter span:active {box-shadow: 0 0 3px #ccc inset;}
+		.pointer { cursor:pointer;} 
+		
+		.
+	</style>
+<meta name="robots" content="NONE,NOARCHIVE" />
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="/admin/">
+{% trans "Home" %}
+</a>
+&rsaquo;
+{{ pageName  }}
+</div>
+{% endblock %}  
+
+{% block content %}
+<div class="date_range"></div>
+<div class="showLoading" id="loadingChart">载入中……</div> 
+<h1>{% block content_header %} {% endblock %}</h1>
+<div class="changeSource">天翼空间:<input type="radio" name="source" checked value='reset' id="reset" onchange="source=this.value;changeSource() "  />&nbsp;点点市场:<input type="radio" name="source" value='ct' id="ct" onchange="source=this.value;changeSource(); " /></div>
+<div class="version"><div class="show" id="showCurrent" onclick="$('.version .main').slideToggle()">所有版本</div><div class="main"><div class="checkall"><input type="checkbox" id="checkAllVer" checked='checked' onchange="var tmpT = this;$('.version .list li input').each(function(e){this.checked = tmpT.checked}) "/>全选\全不选</div><ul class="list" id="AnalyVersion"></ul><div class="confooter"><span class="sure" onclick="changeShowVer();$('.version .main').slideUp()" >确定</span><span onclick="$('.version .main').slideUp()" class="cancle">取消</span></div></div></div>
+	<script>
+		var verlist = JSON.parse($.cookie('diandianAnalysisVersion')),versionExist=verlist?true:false,requestVer = JSON.parse($.cookie('DDRequestVer')),source=$.cookie('source');
+		requestVer = requestVer?requestVer:{old:{isall:true,checkArr:null},new:{isall:true,checkArr:null}};
+		source = source?source:'reset';
+		$('#'+source)[0].checked = true;
+		{% if not choice %}
+			source = null;
+			$('.changeSource').css('display','none');
+	    {% endif %}	
+		getVersion(true);
+		function changeSource(){
+			$.cookie('source',source);
+			requestVer.old.isall = true;
+			$.cookie('DDRequestVer',JSON.stringify(requestVer));
+			getVersion(true);
+		}
+		function getVersion(update){
+			if(!versionExist||!createVersion(verlist)||update){
+				$.getJSON('{{ server  }}/analysis/all_versions?product='+source,function(re){verlist = re;$.cookie('diandianAnalysisVersion',JSON.stringify(re));createVersion(re)});
+			}
+		}
+		function createVersion(tmpvers){
+			if(tmpvers&&Object.prototype.toString.call(tmpvers)=='[object Array]'){
+				var tmpStr = [],tmpArr = requestVer&&requestVer.old.checkArr,tmpIsAll=requestVer&&requestVer.old.isall;
+				for(var i=0,len=tmpvers.length;i<len;i++ ){
+					tmpStr.push("<li><input "+((!tmpIsAll&&(tmpArr.indexOf(tmpvers[i])==-1))?'':'checked=checked')+" id='"+tmpvers[i]+"'  type='checkbox' onchange='requestVer.old.isall=false;$(\"#checkAllVer\")[0].checked=false;'/>版本"+tmpvers[i]+"</li>");
+				}
+				if(!tmpIsAll){$('#checkAllVer')[0].checked=false;}else{
+					requestVer.old.checkArr = tmpvers;$('#checkAllVer')[0].checked=true;
+				}
+				showVersionCheck();
+				$('#AnalyVersion').html(tmpStr.join(""));
+				return true;
+			}
+			versionExist = false;
+			return false;
+		}
+		function changeShowVer(){
+			if($('#checkAllVer')[0].checked){
+				requestVer.old.isall = true;
+				requestVer.old.checkArr = verlist;
+			}else{
+				requestVer.old.checkArr = [];
+				$('#AnalyVersion li input').each(function(e){if(this.checked){requestVer.old.checkArr.push(this.id);}});
+			}
+			$.cookie('DDRequestVer',JSON.stringify(requestVer));
+			showVersionCheck();
+			$('.selected_link')[0].click();	
+		}
+		function showVersionCheck(){
+			if(requestVer.old.checkArr.length==1){
+				$('#showCurrent').html('版本'+requestVer.old.checkArr[0]); 
+			}else if(requestVer.old.isall){
+				$('#showCurrent').html('所有版本');	
+			}else{
+				$('#showCurrent').html('多种版本');
+			}	
+		}
+		function dispLoading(method){
+			switch(method){
+				case 'show':
+					document.getElementById('loadingChart').style.display="block";
+				break;
+				case 'hide':
+					document.getElementById('loadingChart').style.display="none";
+				break;
+				default:
+				break;
+			}
+		}
+	</script>
+{% block chart_area %}{% endblock %}
+
+	<script type="text/javascript">
+		/*function my_swap (data,j,k) {
+			// body...
+			var temp
+			for (var i = data.length - 1; i >= 1; i--) {
+				temp=data[i].data[j];
+				data[i].data[j]=data[i].data[k]
+				data[i].data[k]=temp
+			};
+			return data
+		}
+		function my_sort (data,col,up) {
+			// body...
+			for (var i = 0; i <data[1].data.length-1; i++) {
+					for (var j = i+1;j<data[1].data.length; j++) {
+						if((up && data[col+1].data[i]>data[col+1].data[j]) || (!up && data[col+1].data[i]<data[col+1].data[j]))
+							data=my_swap(data,i,j)
+					};
+			};
+			return data
+		}
+		function trans (name) {
+				// body...
+			switch (name){
+				case "date":
+					return "日期"
+				case "downloads":
+					return "下载量"
+				case "download_per_user":
+					return "活跃用户人均下载"
+				case "source":
+					return "来源"
+				case "times":
+					return "次数"
+				case "used_length":
+					return "平均停留时间"
+				case "load":
+					return "加载次数"
+				case "load_user":
+					return "使用人数"
+				case "click":
+					return "点击数"
+				case "suc_download_rate":
+					return "下载成功率"
+				case "app_click":
+					return "应用点击数"
+				case "app_download":
+					return "应用下载量"
+				case "retention_rate":
+					return "总留存率"
+				case "active_user":
+					return "活跃用户"
+				case "total_user":
+					return "总激活"
+				case "new_user":
+					return "新增用户"
+				case "search":
+					return "搜索次数"
+				case "keyword_search":
+					return "推荐热词点击数"
+				case "download":
+					return "下载次数"
+				case "search_per_user":
+					return "人均搜索次数"
+				case "click_rate":
+					return "搜索应用点击率"
+				case "click_dev":
+					return "同开发者应用点击数"
+				case "click_recommended":
+					return "相关应用点击数"
+				case "share":
+					return "分享点击数"
+				case "keyword_search":
+					return "推荐热词点击数"
+			}
+		}*/
+	</script>
+{% endblock%}

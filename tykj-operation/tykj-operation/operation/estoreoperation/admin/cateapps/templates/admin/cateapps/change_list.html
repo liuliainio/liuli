@@ -1,0 +1,93 @@
+{% extends "admin/change_list.html" %}
+{% load i18n %}
+
+{% block object-tools-items %}
+  {% if has_add_permission %}
+  <li>
+    <a href="/admin/utilities/searchapp/" id="add" class="addlink" onclick="return showRelatedObjectLookupPopup(this);">
+      {% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}
+    </a>
+  </li>
+  {% endif %}
+  {% if has_sync_to_permission and has_change_permission and not is_popup %}
+  <li>
+    <a href="syncto">
+      {% blocktrans with cl.opts.verbose_name as name %}Sync {{ name }} to production{% endblocktrans %}
+    </a>
+  </li>
+  {% endif %}
+{% endblock %}
+{% block app_deatil_js %}
+ {% if cl.opts.app_label == "cateapps" %}
+ <input type="hidden" value="1" id="searchFilter" />
+ {% endif %}
+ <script>
+        var appInfoBox,appInfoContent,showFalgDoms,app_detail={},transKey=['是否已发布','是否已同步','有无预览','更新时间','应用类型','平台'],tmpPlatform = {'0':'General','1':'Android Phone','2':'Android Pad','3':'Android Phone&Pad','4':'Iphone','8':'Ipad','12':'Ipone&Ipad'},tmpAppType = ['普通','越狱','主题','壁纸'],transMethod =['tmp_value?"是":"否"','tmp_value?"是":"否"','tmp_value?"有":"无"','tmp_value','tmpAppType[tmp_value]','tmpPlatform[tmp_value]'];
+        window.addEventListener('load',function(){
+                var tmpTr = $('#result_list').find('tr'),len=tmpTr.length,tmp;
+                if(len>1){
+                        $(tmpTr[0]).prepend('<th style="width:52px">展开详情</th>')
+                        for(var i=1;i<len;i++){
+                                tmp = $(tmpTr[i]);
+                                tmp.prepend("<td class='SM_td' ><span class='showMore Moff' id='"+tmp.find('td')[2].innerHTML+"'>&lt;&lt;</span></td>");
+                        }
+                }
+                showFalgDoms=$('.showMore');
+                $('.showMore').bind('click',function(e){
+                        var tmpTarget = e.target,class_name = tmpTarget.className,
+                            tranArr={'off':'on','on':'off'};
+                        if(class_name.indexOf('on')!=-1){
+                                appInfoBox.css('display','none');
+                                tmpTarget.className = class_name.replace('on','off');
+                        }else{
+                                showFalgDoms.each(function(){this.className=this.className.replace('on','off');});
+                                tmpTarget.className = class_name.replace('off','on');
+                                appInfoBox.css({top:(document.body.scrollTop+e.screenY-95)+'px',display:'block'});
+                                updateDetails(tmpTarget.id);
+                        }
+                        return ;
+                                //tmpTarget.className = class_name.replace(/on|off/,tranArr[class_name.match(/on|off/)[0]]);
+                });
+                $('body').append('<div class="app_detai_info_box" id="app_detail_out"><div class="app_detai_bg" id="app_detail_content"><span class="app_info_item"><span class="app_info_item_lable">platform</span> </span></div><div class="Loading" id="app_detail_loading">获取应用详情中……</div><span class="app_detail_errors" id="load_errors">请求数据失败，请检查网络或稍候重试！</span></div>')
+                appInfoBox = $('#app_detail_out');
+                appInfoContent = $('#app_detail_content');
+        });
+     function updateDetails(tmpId){
+        if(app_detail[tmpId]){
+                appInfoContent.html(app_detail[tmpId]);
+        }else{
+            appInfoContent.html('');
+            app_detail_loading(true);
+            $('#load_errors').css('display','none');
+            $.getJSON('/admin/get_app_detail',{app_id:tmpId},function(reData){
+                    var tmpHtml =[],tmp_value,tmp_name,tmp_key;
+                    app_detail_loading(false);
+                    if(reData.length>0){
+                        for(var i=0,len=reData.length;i<len;i++){
+                                tmp_name=reData[i].name;
+                                tmp_value=reData[i].value;
+                                tmp_key = transKey.indexOf(tmp_name);
+                                if(tmp_key!=-1){
+                                        tmp_value = eval(transMethod[tmp_key]);
+                                }
+                                tmpHtml.push('<span class="app_info_item"><span class="label">'+tmp_name+'</span>'+tmp_value+'</span>');
+                        }
+                        if(tmpHtml.length>0){
+                                app_detail[tmpId]=tmpHtml.join("");
+                                appInfoContent.html(app_detail[tmpId]);
+                                return ;
+                        }
+                    }else{
+                        $('#load_errors').css('display', 'inline-block');
+                        return ;
+                    }
+            });
+        }
+         
+     }
+     function app_detail_loading(tmpM){
+        $('#app_detail_loading').css('display',tmpM?"block":"none");
+     }
+ </script>
+{% endblock %}
+

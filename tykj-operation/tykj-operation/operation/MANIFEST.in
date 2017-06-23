@@ -1,0 +1,26 @@
+global-include *.py *.sh *.xml *.cfg 
+graft scripts
+graft estoreoperation/locale
+graft estoreoperation/static
+graft estoreoperation/templates
+graft estoreoperation/admin/applist/static
+graft estoreoperation/admin/cateapps/static
+graft estoreoperation/admin/cateapps/templates
+graft estoreoperation/admin/newapps/templates
+graft estoreoperation/admin/subject/static
+graft estoreoperation/admin_tools/locale
+graft estoreoperation/admin_tools/media
+graft estoreoperation/admin_tools/static
+graft estoreoperation/admin_tools/dashboard/static
+graft estoreoperation/admin_tools/dashboard/templates
+graft estoreoperation/admin_tools/menu/static
+graft estoreoperation/admin_tools/menu/templates
+graft estoreoperation/admin_tools/theming/static
+graft estoreoperation/admin_tools/theming/templates
+graft estoreoperation/ajax_select/static
+graft estoreoperation/ajax_select/templates
+graft estoreoperation/app/templates
+graft estoreoperation/analysis/static
+graft estoreoperation/analysis/templates
+graft estoreoperation/push/static
+graft estoreoperation/push/templates

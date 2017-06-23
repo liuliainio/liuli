@@ -1,0 +1,903 @@
+{% extends "admin/base_site.html" %}
+{% load adminmedia admin_list i18n %}
+
+{% block extrastyle %}
+  {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+    <link rel="stylesheet" href="/static/admin_tools/css/menu.css" type="text/css" media="screen, projection"/>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/static/admin_tools/css/menu-ie.css" type="text/css" media="screen, projection"/>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/changelists.css" />
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/admin_tools/css/theming.css" />
+    <link rel="stylesheet" href="/static/admin_tools/css/leftnav.css" type="text/css" media="screen, projection"/>
+    <script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery.easydrag.handler.beta2.js"></script>
+    <script type="text/javascript" src="/static/analysis/js/jquery-ui.js"></script>
+	<script src='/static/admin_tools/js/jquery/jquery.cookie.min.js'></script>
+	<script src="/static/analysis/js/highcharts.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/analysis/css/jquery-ui-1.10.0.custom.min.css" />
+    <script type="text/javascript">
+        function strDate(date) {
+            return date.getFullYear() + "-" +
+                (date.getMonth() + 1) + "-" +
+                date.getDate();
+        }
+    </script>
+	<style type="text/css">
+        #f{position: absolute;right: 13px;top: 4px;width: 224px;height: 26px;overflow: hidden;background: url(/static/analysis/images/double_picker.jpg);}
+        #f span{position: absolute;top: 1px;left: 0;height: 26px;width: 200px;line-height: 26px;font-size: 12px;font-weight: bold;color: #555;text-align: center;}
+        #f a{display: block;position: absolute;top: 0;right: 0;width: 26px;height: 26px;text-decoration: none;text-indent: -3000px;}
+        #c {position: absolute;top: 33px;right: 12px;height: 230px;width: 491px;overflow: hidden;background: rgb(74, 146, 194);z-index: 999}
+        #content-main ul{float: left;height: auto;}
+        .tag_cloud{position:absolute;width: 100%;margin: 10px 0;padding: 10px 0;border: 1px solid #ccc;background-color: #f0f0f0;z-index: 999;}
+        .tag_cloud a{display: block;padding: 7px 20px;box-shadow: 0 0 1px #000;color:#000;font-size: 12px;background: #fff;}
+        .tag_cloud a:hover { background: #cbcbcb;}
+        .tag_cloud .selected_link{background: #0088d1;color:#fff;}
+        .tag_cloud li{display: block;float: left;height: 32px;margin: 5px 10px;padding-left: 22px;list-style: none;border-radius: 2px;color: #666666;line-height: 19px;}
+        #content-main h3{display: inline-block;margin-left: 7px;padding-left: 5px;width: 105px;height: 25px;border: 1px solid #ccc;color: #555555;line-height: 25px;font-weight: normal;font-size: 12px;background: #fff url(/static/analysis/images/nav_pic.png) no-repeat 93px 10px;cursor: pointer;}
+        .close_date{position: absolute;right: 250px;top: -3px;}
+        #sel{display: none;position: absolute;right: 250px;top: 118px;width: 121px;padding: 0;margin: 0;background-color: #fff;z-index: 2;}
+        #sel li{height: 24px;padding:0 0 0 5px;list-style:none;}
+        #sel li a{display: block;margin: 0 5px;overflow: hidden;line-height: 24px;text-overflow: ellipsis;white-space: nowrap;}
+        .selected{padding: 0;margin: 0;border-left: 0;color:#fff;background-color: #008cd1;}
+        .selected a{color: #fff;}
+        #content-main td{border-right: 1px solid #eee;}
+        .datepickerContainer {background: #eaf4fd;}
+        .datepickerContainer td{border: 2px solid #fff;}
+        div.datepicker a {color: #2d6c9f;}
+        td.datepickerNotInMonth a {color: rgb(0, 0, 0);}
+        tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {background: #EAF4FD;}
+        tbody.datepickerDays td.datepickerSelected {background: #51BB56;}
+        .datepickerBorderT,.datepickerBorderB,.datepickerBorderR,.datepickerBorderL,.datepickerBorderTR,.datepickerBorderTL,.datepickerBorderBR,.datepickerBorderBL{display: none;}
+        #changelist .page {height: 35px;padding-top: 20px;padding-left: 10px;border-top: none;border-bottom: none;letter-spacing: 1px;color: #666;overflow: hidden;line-height: 25px;background: #fff;}
+        .page a {display: inline-block;height: 25px;margin: 0 4px;padding: 0 9px;border: 1px solid #e6e6e6;vertical-align: top;text-align: center;color: #126ea2;cursor: pointer;}
+        .page a:hover {color: white;background: #5b80b2;border-color: #036;}
+		.results #tb tr:nth-child(odd) {background-color:#f6f6f6;}   
+        #changelist .page .on{border: none;}
+        #changelist .page #last {width: auto;padding: 0 7px 0 18px;margin-left: 15px;}
+        #changelist .page #next {width: auto;padding: 0 20px 0 7px;margin-right: 20px;}
+        #mydatepicker{display: block;position: absolute;right: -2px;top: 121px;padding: 5px;border: 1px solid #CCCCCC;border-radius: 3px 3px 3px 3px;box-shadow: 1px 1px 2px #CCCCCC;background: #FFFFFF;z-index: 2;}
+	#tb .disabled,#content .hidden,.noChartTit #chartKind,#tableKind,#search_block{display: none;}
+        a #next:hover,a #last:hover{border-color: #036;color: #036;background: #5b80b2;}
+        #date_part{float: left;margin:0 5px;}
+        .date_input{width: 135px;margin-bottom: 10px;margin-bottom: 4px;}
+                .bar_title{height: 30px;padding-left: 12px;line-height: 30px;color: black;font-size: 14px;}
+        .table_btn{position: absolute;height: 26px;color: #000;background: #f2f2f2;top: 3px;right: 142px;width: 60px;color:#000}
+		.noChartTit {height:35px;overflow:hidden}
+		.noChartTit #tableKind{display:block;}
+	.choise_versions,.choise_appkeys{top: -30px;right: 0px;}
+	.choise_source{right: 382px;top: 90px;}
+        .showLoading{position:fixed;display:none;width: 80px;height: 33px;padding-left: 41px;line-height: 33px;margin-top:-33px;left:50%;top:50%;background:url(/static/analysis/images/loading.gif) no-repeat 0 0;z-index:100}
+		.choises{display:none;position: absolute;width:170px;border: 1px solid #ccc;border-bottom:none;background-color: #fff;z-index:1000;}
+		.platform:nth-child(2) {right:443px}
+		.platform:nth-child(3) {right:580px}
+		.platform:nth-child(4) {right:716px}
+		.platform:nth-child(5) {right:849px}
+		.platform{position: absolute;top: 2px;right:443px;width: 127px;border: 1px solid #ccc;border-bottom: none;background-color: #fff;z-index: 2;}
+		.platform .main,.choises .main{display:none;border-bottom:1px solid #ccc;}
+		.platform .show,.choises .show{height: 27px;padding-left: 5px;padding-right: 25px;border-bottom: 1px solid #ccc;font-size: 13px;line-height: 27px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;background:url(/static/analysis/images/nav_pic.png) no-repeat 148px 11px;cursor:pointer;}
+		.choises .checkall{height: 32px;margin: 0 5px;padding: 0 0 0 7px;border-bottom: 1px solid #ccc;line-height: 32px;}
+		.choises .checkall input{margin-right:5px;}
+		.platform .list,.choises .list{float:none !important;padding-left:12px;}
+		.platform .list{float:none !important;padding-left:0px}
+		.platform .list li,.choises .list li{margin: 8px 0;list-style: none;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.platform .list li input,.choises .list li input{margin-right: 2px;}
+		.platform .confooter,.choises .confooter{padding-left: 2px;height: 38px;background-color: #f0f0f0;}
+		.platform .confooter span,.choises .confooter span{display: inline-block;width: 52px;height: 26px;margin: 5px 4px;border: 1px solid #ccc;border-radius: 4px;text-align: center;line-height: 25px;cursor: pointer;}
+		.platform .confooter span:hover,.choises .confooter span:hover {background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#E6E6E6));}
+		.choises .confooter span:active {box-shadow: 0 0 3px #ccc inset;}
+		.pointer { cursor:pointer;}
+	</style>
+<meta name="robots" content="NONE,NOARCHIVE" />
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="/admin/">
+{% trans "Home" %}
+</a>
+&rsaquo;
+{{ pageName }}
+</div>
+{% endblock %}  
+
+{% block content %}
+<div class="date_range"></div>
+<div class="showLoading" id="loadingChart">载入中……</div> 
+<h1>{% block content_header %} {% endblock %}</h1>
+<div class="choises choise_versions choise_appkeys"></div>
+        <h1>修改 应用版本</h1>
+        <div id="content-main" class="app">
+            <style type="text/css">fieldset.module td.original p { display: none; }</style>
+            <ul class="tag_cloud" id="tagCloud"></ul>
+<div class="hidden">
+	<input type="hidden" name="csrfmiddlewaretoken" value="4f031553526f45ec712eca9c58599ff5" />
+</div>
+<div id="mydatepicker" class="hidden">
+	<div id="date_part">
+		<span style="font-size: 12px;">开始日期:</span>
+		<input type="text" id="start_date" class="date_input">
+		<div id="date_1" ></div>
+	</div>
+	<div id="date_part">
+		<span style="font-size: 12px;">结束日期:</span>
+		<input type="text" id="end_date" class="date_input">
+		<div id="date_2"  ></div>
+	</div>
+	<input type="button" value="确定" onclick='$("#mydatepicker").toggle();$(".selected_link")[0].click();' style="float: right;clear: left;margin-right: 10px;margin-top: 10px;width: 80px;height: 30px;">
+</div>
+	<ul id="sel" class="hidden">
+		<li class="selected">
+			<a href="#" onclick="selectAge(1,this)">昨日</a>
+		</li>
+		<li>
+			<a href="#" onclick="selectAge(2,this)">最近7天</a>
+		</li>
+		<li>
+			<a href="#" onclick="selectAge(3,this)">最近30天</a>
+		</li>
+		<li>
+			<a href="#" onclick="selectAge(5,this)">最近90天</a>
+		</li>
+		<li>
+			<a href="#" onclick="selectAge(4,this)">指定时间段</a>
+		</li>
+	</ul>
+<div class="choises choise_source"></div>
+<fieldset class="module" id="chartArea"  style="position: relative;margin-top: 86px;width: 100%;">
+<h2 id="chartKind">数据图</h2>
+<h2 id="tableKind">统计时间</h2>
+<h3 class="close_date" onclick='$("#sel").toggle()'>最近7天</h3>
+
+<div id="f">
+<span>2013-01-19 至 2013-01-23</span>
+<a href="#" onclick='$("#mydatepicker").toggle()'>Select date range</a>
+</div>
+	<script>
+		$(function() {
+			$( "#date_1" ).datepicker({
+				inline: true,
+				firstDay:1,
+				defaultDate:-7,
+				dateFormat: "yy-mm-dd",
+				altField:"#start_date",
+				buttonText:"确定",
+				monthNames:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月',],
+				dayNamesMin:['周日','周一','周二','周三','周四','周五','周六'],
+				onSelect:function(dateText){
+					$("#f span").html($("#start_date").val()+" 至 "+$("#end_date").val());
+				}
+			});
+			$( "#date_2" ).datepicker({
+				inline: true,
+				firstDay:1,
+				defaultDate:0,
+				dateFormat: "yy-mm-dd",
+				altField:"#end_date",
+				monthNames:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月',],
+				dayNamesMin:['周日','周一','周二','周三','周四','周五','周六'],
+				onSelect:function(dateText){
+					$("#f span").html($("#start_date").val()+" 至 "+$("#end_date").val());
+				}
+			});
+
+		});
+		function getMyTime (t) {
+            // body...
+            a=new Date()
+            a.setTime(t)
+            y=a.getFullYear();
+            var m=a.getMonth()+1;
+            if (m<10) m="0"+m;
+            var d=a.getDate();
+            if (d<10) d="0"+d;
+            return y+"-"+m+"-"+d;
+        }
+        var d=new Date();
+        $("#f span").html(getMyTime(d-604800000)+' 至 '+getMyTime(d))
+		function do_refresh () {
+			$(".selected_link")[0].click();
+		}
+		function selectAge(a,curNode) {
+		// body...
+		    $('.selected').removeClass('selected');
+		    $(curNode).parent().addClass('selected');
+			var d=new Date();
+			switch (a){
+				case 1:
+					$("#f span").html(getMyTime(d-86400000)+' 至 '+getMyTime(d-86400000))
+					$('.close_date').html('昨日')
+				break;
+				case 2:
+					$("#f span").html(getMyTime(d-604800000)+' 至 '+getMyTime(d-86400000))
+					$('.close_date').html('最近7天')
+				break;
+				case 3:
+					$("#f span").html(getMyTime(d-2419200000)+' 至 '+getMyTime(d-86400000))
+					$('.close_date').html('最近30天')
+				break;
+				case 4:
+					$('#mydatepicker').toggle();
+					$('.close_date').html('指定时间段')
+				break;
+				case 5:
+					$("#f span").html(getMyTime(d-7257600000)+' 至 '+getMyTime(d-86400000))
+					$('.close_date').html('最近90天')
+				break;
+		    }
+			do_refresh ()
+			$("#sel").hide()
+		}
+		$(window).scroll(function(){
+			if(document.body.scrollTop>100)
+			{
+				$(".tag_cloud").css("position","fixed")
+				$(".tag_cloud").css("top","-10px")
+			}
+			else
+			{
+				$(".tag_cloud").css("position","absolute")
+				$(".tag_cloud").css("top","auto")
+			}
+		});
+	</script>
+<div id="canvasDiv"></div>
+</fieldset>
+
+<fieldset class="module"  id="changelist" style="position: relative;margin-top: 20px;">
+<h2 style="margin-bottom: 0;">报表</h2>
+<div id="search_block">
+<!-- DIV needed for valid HTML -->
+<input type="text" size="40" name="q" value="" placeholder="输入标题或ID" id="searchbar" style="top: 3px;right: 222px;position: absolute;height: 20px;font-size: 12px;width: 200px;" onkeypress='if(event.keyCode==13){$(this).next().click}'>
+<input type="submit" value="搜索" class="table_btn search_btn"></div>
+
+<form id="excel_form" action="/analysis/loadfile/data.xls" method="get">
+<input type="hidden" id="downloadid" name="downloadid" value=""/>
+<input type="submit" value="导出Excel文档" style="position: absolute;top: 2px;right: 30px;height: 26px;color: #000;background: #f2f2f2;"/>
+</form>
+<div class="results">
+<table cellspacing="0" id="result_list" style="width: 100%;">
+<thead id="th"></thead>
+<tbody id="tb"></tbody>
+</table>
+</div>
+<div>
+<p class="page" id="page_bar_out">
+<span id="page_bar" ></span>
+</p>
+</div>
+</fieldset>
+</div>
+<script>
+		function ReportChart(opt){
+			this.init(opt);
+		}
+		ReportChart.prototype={
+			serve_url:'{{ server  }}',
+			show_break:false,
+			current_attachs:{base:{},extra:{}},  //存储当前标签图表参数
+			return_data_arr:[],
+			attache_queues:[],   //标签参数队列，用于连续切换标签时的参数存储
+			table_arr:[],
+			dirce_page:{font:0,bottom:7},
+			scroll_top_cache:null,
+			init:function(tagCloudArr){
+				var tag_node = $('#tagCloud'),self=this;
+				tagCloudArr = JSON.parse(tagCloudArr.replace(/&quot;/g,'"'));
+				if(Object.prototype.toString.call(tagCloudArr)=='[object Array]'&&tagCloudArr.length>0){
+					tag_node[0].innerHTML = tagCloudArr.map(function(){   //生成标签
+						var p=arguments; //简写js函数参数数列
+						return '<li><a href="#" class="white_link '+p[0].chartType+(p[0].hasDialog?" dialog":"")+(p[0].firstSelect?" selected_link":"")+(p[0].hasSourceChoices?" hasSource":"")+'">'+p[0].name+'</a></li>'
+					}).join('');
+				}
+				self.initChoise('init');	
+				self.addEvent(tag_node[0],'click',function(e){
+					var tmp,
+						tmp_class,
+						has_chart,  
+						target_node = e.target,  //标签节点
+						target_class = target_node.className;
+					try{
+						if(target_node.tagName.toLowerCase()==='a'){
+							if(self.return_data_arr.length>0){  //多次点击取消中间展示
+								self.show_break=true;
+							}
+							tag_node.find('a').removeClass('selected_link');
+							target_node.className +=' selected_link';
+							self.current_attachs.base={report_name:target_node.innerText.replace(/\s/g,''),chart_type:(tmp=target_class.match(/pie|line|area|no_chart/)[0]),dialog:/\bdialog\b/.test(target_class)};//从标签的类名中取出图表的显示参数
+							if(/\bhasSource\b/.test(target_class)){  //根据类名决定是否要显示筛选项
+								$('.choise_source').show();
+							}else{
+								$('.choise_source').hide();
+								delete self.current_attachs.extra.source;
+							}
+							self.reloadPage();
+							has_chart = tmp !=='no_chart';
+							tmp = $('#chartArea,#search_block');
+							tmp_class = tmp[0].className;
+							/\bnoChartTit\b/.test(tmp_class)?has_chart?(tmp[0].className=tmp_class.replace(/\bnoChartTit\b/),tmp[1].style.display='none'):'':!has_chart?(tmp[0].className = tmp_class+' noChartTit',tmp[1].style.display='block'):'';   //根据是否有图改变页面样式
+						}
+					}catch(err){
+						console.log(err);
+					}
+				});
+				self.addEvent($('#changelist')[0],'click',function(){   //监听页面上的点击,用于类搜索的交互逻辑
+					var p,target_dom,target_class,has_sort,nav_operand,nav_repeat,tbNode,tmp,len,i,j,method='',matchs='',page_count=1,column=-1,total_page=0,total_tr=0,nav_sign=1;
+					p = arguments;  
+					target_dom = p[0].target; //被点击的元素
+					target_class=target_dom.className;  //被点击元素的样式类名
+					has_sort=false;  //表格排序与否标识,默认未排序,已经排序数据再排就反转数据
+					nav_operand=[0,1,2,3,4,5];  //用于表格分页标签组织
+					nav_repeat=false;  //标识是否点击当前分页标签,如果true则不更新分布标签
+					if(target_class){
+                        matchs = target_class.match(/\bhas_dialog\b|\bpage_count\b|\bsort\b|\bjump_btn\b|\blast\b|\bnext\b|\bsearch_btn\b/);  //筛选点击,只处理在列表
+						matchs = matchs&&matchs[0];
+						switch(matchs){
+							case 'page_count':
+							case 'last':
+							case 'next':   //表格分页
+								method = 'change_page';
+								page_count = parseInt((matchs == 'page_count'?(nav_repeat=/\bon\b/.test(target_class),target_dom.id):$('.pnav.on')[0].id).match(/\d+/)[0]);
+								matchs=='last'?page_count--:matchs=='next'?page_count++:'';
+							break;
+							case 'jump_btn':  //跳转到某一页
+								method = 'change_page';
+								page_count = parseInt($('#anyJumpTo').val());  //跳转目标页
+							break;
+							case 'search_btn':  //搜索表格(使用服务端api)
+								self.current_attachs.extra.search_word = encodeURIComponent($(target_dom).prev()[0].value);
+								self.reloadPage();
+							break;
+							case 'sort':  //表格排序初始化
+								method = 'sort_table';
+								has_sort = /has_sort/.test(target_class);
+								column = parseInt(target_dom.id);
+							break;
+							case 'has_dialog':  //弹出图表
+								self.creatDialog(target_dom.innerText,$(target_dom).parent().next().text());
+								return ;
+							break;
+							default:
+							break;
+						}
+						switch(method){
+							case 'change_page':  //表格分布更改页
+								total_page = Math.ceil(parseInt($('#show_total').text().match(/\d+/)[0]||0)/30); //表格分页总数
+								total_tr = self.table_arr.length;  //表格总行数
+								tbNode = $('#tb');  //table body 放置区域
+								tmp =[];
+								if(page_count>0 && page_count<= total_page){
+									for(i=(page_count-1)*30,len=(total_tr>page_count*30)?page_count*30:total_tr;i<len;i++){  //生成当前页面表格数据,每页30行
+										tmp.push(self.table_arr[i][0]);  
+									}
+									tbNode.html(tmp.join(""));
+									if(nav_repeat){  //如果要跳转页是当前页 不更新分布nav
+										return ;
+									}
+									// 更新分布标签 标签最多显示7项,点号相当于一项,第一个标签始终为1,最后一个始终为最后一页
+									tmp = $('.last,.next').removeClass('hidden');
+									if(total_page<=7){  //少于7项仅更新选中状态
+										$('.pnav.on').removeClass('on');
+										$('#page_bar').find('#'+page_count+'p').addClass('on');
+										page_count==total_page?tmp[1].className+=' hidden':page_count==1?tmp[0].className+=' hidden':'';
+									}else{ //多于7项分布标签生成
+										if(page_count==1||page_count==total_page){  
+											page_count==total_page?
+												(tmp[0].className+=' hidden',nav_operand.reverse(),nav_operand.unshift('first'),nav_sign=-1)
+												:page_count==1?
+													(tmp[1].className+=' hidden',nav_operand.push('last'))
+													:'';
+											tmp = nav_operand.map(function(p){  //目标页为1或最后一页时,一个点号,其余为连续数字
+												var tmp;
+												tmp = p=='first'?1:p=='last'?total_page:(page_count+nav_sign*p);
+												return '<a class="pnav page_count '+(!p?'on':'')+'" id="'+tmp+'p" >'+tmp+'</a>';
+											}).join('');
+										}else{
+											//中间分布标签生成
+											tmp = 1;  //当前页面左右两边默认保留多少标签
+											len=tmp*2+5;
+											j=-(tmp+2);
+											tmp =[];
+											for(i=0;i<len;i++){
+												tmp.push(page_count+(j+i));
+											}
+											len --;
+											tmp[0]>1?(tmp[0]=1,tmp[1]='dian'):'';
+											tmp[len]<total_page?(tmp[len]=total_page,tmp[len-1]='dian'):'';
+											tmp = tmp.map(function(num){
+												return num=='dian'?'<span class="pnavdd">...</span>':num>0 && num<=total_page?('<a class="pnav page_count'+(num==page_count?' on':'')+'" id="'+num+'p" >'+num+'</a>'):'';  //如果num是数字生成分页标签,为dian生成点号
+											}).join('');
+										}
+										$('#page_bar').html(tmp);
+									}
+									
+								}
+							break;
+							case 'sort_table':  //表格排序
+								try{
+									if(has_sort){   //已经排序列再次排序 则反转
+										self.table_arr.reverse();  
+									}else{
+										self.table_arr.sort(function(a,b){   //区别数字和其他字符,其他字符用localCompare排序,数字用加减排序
+											return (typeof a[column] =="string"||(typeof a[column]==='object'&&Object.prototype.toString.call(a[column])==='[object String]'))&&(/\D+/g.test(a[column]))?a[column].localeCompare(b[column]):(a[column] - b[column]);
+										});
+										$('.sort.has_sort').removeClass('has_sort');  //更新已排序列
+										target_dom.className = target_class+' has_sort';
+									}
+									$('.pnav.on')[0].click();  //更新当前页表格数据
+								}catch(err){
+									console.log(err);
+								}
+							break;
+							default:
+							break;
+						}
+						return ;
+					}
+				});
+			$('.tag_cloud').find('.selected_link')[0].click();  //用默认选中标签初始化图表
+			},
+			initChoise:function(){   //初始化筛选项,由服务端api返回筛选选项
+				var self = this,p = arguments,choises_arr;
+				switch(p[0]){
+					case 'init':
+						p.callee.call(self,'request');
+					break;
+					case 'request':
+						$.getJSON('/analysis/get_choices?reportname={{ pageName }}',function(re_data){
+							if(re_data.length>0){ //返回数据是数组
+								p.callee.apply(self,['treat',re_data]);
+							}
+						});
+					break;
+					case 'treat':
+							choises_arr = p[1];
+							choises_arr.forEach(function(){
+								var p = arguments,tmp_html='',cache_set,is_all;
+								is_all=true; //默认全部选中
+								if(p[0].display){  //display 为true才显示当前筛选项
+									try{
+										cache_set = JSON.parse($.cookie('DDRequest'+p[0].parametername)); //某些筛选是跨左导项的,所以加入cookie缓存
+										if(cache_set){
+											is_all = cache_set.is_all;
+											self.current_attachs.extra[p[0].parametername] = cache_set.check_arr.join();
+											cache_set = cache_set.check_arr;
+										}else{
+											cache_set = [];
+										}
+									}catch(err){
+										console.log(err);
+										cache_set = [];
+									}
+									tmp_html = p[0].data.map(function(item){  //组织筛选项,默认选项名称和id一致,id用于组织api,若传回数据为数组,则id为第一项,名称为第二项
+										var title,id;
+										Object.prototype.toString.call(item)==='[object Array]'?(title=item[1],id=item[0]):(title=id=item);
+										return "<li title='"+title+"'><input "+(!is_all&&cache_set.indexOf(id)==-1?'':'checked=checked')+" class='list_item' id='"+id+"' type='checkbox'/>"+title+"</li>";	
+									}).join('');
+									tmp_html = '<div class="show" id="showCurrent">'+p[0].display_name+'</div><div class="main"><div class="checkall"><input type="checkbox" class="check_all" id="checkAllVer" >全选\全不选</div><ul class="list">'+tmp_html+'</ul><div class="confooter"><span class="sure">确定</span><span class="cancle">取消</span></div></div>';
+									tmp = $('.choise_'+p[0].parametername);
+									tmp[0].id = p[0].parametername;
+									tmp.html(tmp_html);
+									/versions|appkeys/.test(p[0].parametername)?tmp.show():'';  //显示指定choise 默认隐藏
+								}
+							});
+							$('.choises').bind('click',function(){  //筛选选项交互
+								var p = arguments, check_arr=[], is_all=true, event_target, event_handle, action_dom, check_status, tmp;
+								event_target = p[0].target; //被点击元素
+								event_handle = $(p[0].currentTarget); //哪种筛选
+								action_dom=event_handle.find('.show,.main');  //当前筛选元素节点缓存
+								switch(event_target.className){
+									case 'check_all':  //全选
+										check_status = event_target.checked;
+										event_handle.find('.list_item').each(function(){
+											this.checked = check_status;
+										});
+									break;
+									case 'sure':  //确定生效
+										event_handle.find('.list_item').each(function(){
+											this.checked?check_arr.push(this.id):is_all=false;   //记录所选的项,若有未选,则把全选置否
+										});
+										tmp = event_handle[0].id;
+										self.current_attachs.extra[tmp]=check_arr.join();  //组织api发送项
+										self.reloadPage();
+										$.cookie('DDRequest'+tmp,JSON.stringify({is_all:is_all,check_arr:check_arr}));  //写入cookie 记录选中情况
+										$(action_dom[1]).slideToggle();
+									break;
+									case 'cancle': //取消或点击下拉
+									case 'show':
+										$(action_dom[1]).slideToggle();
+									break;
+									default:
+									break;
+								}
+							});
+					break;
+					default:
+					break;
+				}
+				return ;
+			},
+			reloadPage:function(){
+				var self = this,
+					tmp,
+					XRH,
+					tmp_attachs=self.current_attachs,
+					start=$("#f span").html().substr(0,10),  //起始时间
+					end=$("#f span").html().substr(-10,10),   //结束时间
+					extra_opt='';
+				self.dispLoading(true); 	
+				tmp = tmp_attachs.extra;   
+				for(var i in tmp){  //组织筛选参数,如search_word=a
+					tmp.hasOwnProperty(i)?extra_opt+='&'+i+'='+tmp[i]:'';
+				}
+                                XRH?(XRH.abort(),self.attache_queues.pop()):'';
+				tmp_attachs = tmp_attachs.base;	
+				self.attache_queues.push({chart_type:tmp_attachs.chart_type,dialog:tmp_attachs.dialog,tran_to_percentage:tmp_attachs.report_name=='下载趋势'});//把图表显示控制参数压入栈
+				XRH =  $.ajax({
+					url: '{{ server }}/analysis/reporting?chart_name={{ chart }}&report_name='+encodeURIComponent(tmp_attachs.report_name)+'&start='+start+'&end='+end+extra_opt,
+					timeout:60000,
+					error:function(){ 
+						self.attache_queues.shift();
+                                                self.dispLoading(false);
+						alert('获取数据失败，请稍候重试！');
+					},
+					dataType: 'json',
+					success: function(re_data) {
+						self.dispLoading(false);
+						self.return_data_arr.length==0?(self.return_data_arr.push(re_data),self.showData()):self.return_data_arr.push(re_data);  //当前待处理数据队列里没有数据时执行处理函数
+					}	
+				});   
+			},
+			showData:function(){ //渲染接收到图表数据,因为可能快速连续切换标签,所以加入队列结构,保证显示参数与数据对应
+				var self = this,
+					tmp_data,
+					tmp_attach;
+					try{
+						if(self.return_data_arr.length == 0||self.return_data_arr[0].length == 0||self.return_data_arr[0][1].data.length == 0){
+							self.clearQueues('remove_one');
+							self.return_data_arr.length>0?arguments.callee.call(self):alert('没有数据!');
+							return ;
+						}
+					}
+					catch(err){
+						self.clearQueues('remove_one');
+						self.return_data_arr.length>0?arguments.callee.call(self):alert('请求失败!');
+						return ;
+					}
+					self.return_data_arr.length>1?self.clearQueues('left_one'):'';  //当待处理队列长度大于1时，清扫队列，仅留一个
+					tmp_data = self.return_data_arr[0];
+					tmp_attach = self.attache_queues[0];
+					
+					if(!self.show_break){
+						self.insertTable(tmp_data,tmp_attach);    //生成表格
+						tmp_attach.chart_type!='no_chart'?self.insertChart(tmp_data,tmp_attach.chart_type):'';   //生成图
+					}
+					 //当前处理数据为空时，如果队列有其他数据，处理其他，否则提示没有数据;当前未开始处理数据时，用户切换的标签，中断当前处理 退出
+					self.clearQueues('remove_one');
+					self.return_data_arr.length>0?arguments.callee.call(self):self.show_break?self.show_break=false:''; 
+			},
+			insertTable:function (data,others){
+				var self = this,table_doms,old_data,tmp_count,cur_page=1,total_page,total_tr,total_line,tmp;
+				table_doms = $('#th,#tb,#page_bar_out');  //表头,表body,分页栏节点缓存
+				total_page=Math.ceil(data[1].data.length/30);
+				total_tr=data[1].data.length;
+				total_line = data.length;
+				table_doms[1].innerHTML = table_doms[0].innerHTML = '';
+				table_doms[2].innerHTML = '<span id="page_bar"></span>';
+				if(others.tran_to_percentage){  //下载趋势表格要转为百分比
+					old_data = data;
+					data = [];
+					data.push(old_data[0]);
+					for(var j=1;j<total_line;j++){
+						data[j]={data:[],name:old_data[j].name};
+					}
+					data[1].data = old_data[1].data;
+					for(var i=0;i<total_tr;i++){
+						tmp_count = 0;
+						for(var j=2;j<total_line;j++){
+							tmp_count+=old_data[j].data[i];
+						}
+						for(var j=2;j<total_line;j++){
+							data[j].data[i]=Math.round(old_data[j].data[i]*10000/tmp_count)/100+'%';
+						}
+					}
+					old_data.shift();
+				}
+				$("#downloadid").val(data.shift().downloadid); //downloadid是用于下载表格的
+				total_line--;
+				tmp = data.map(function(){  //生成列标题
+					var p = arguments;
+					return '<th scope="col" class="pointer sort"  id="'+p[1]+'">'+p[0].name+'</th>';
+				}).join('');
+				table_doms[0].innerHTML = '<tr>'+tmp+'</tr>';
+				//组织表格分页标签
+				if(total_page>7){
+					tmp ='<span id="page_bar"><a class="pnav on page_count" id="1p">1</a><a class="pnav page_count" id="2p">2</a><a class="pnav page_count" id="3p">3</a><span class="pnavdd">...</span><a class="pnav page_count" id="'+total_page+'p" >'+total_page+'</a></span>';
+				}else{
+					tmp=['<span id="page_bar">'];
+					for(var i=1,len=total_page;i<=len;i++){
+						tmp.push('<a class="pnav page_count'+(cur_page==i?" on":"")+'" id="'+i+'p">'+i+'</a>');
+					}
+					tmp.push('</span>')
+					tmp = tmp.join('');
+				}
+				//根据页数决定是否添加上一页\下一页
+				if(total_page>1){
+					table_doms[2].innerHTML = '<span id="show_total">共有'+total_tr+'条记录</span><a class="pnav hidden last">上一页</a>'+tmp+'<a class="pnav next" >下一页</a><input type="range" id="anySelec" value="1"  min="1" max="'+total_page+'" onchange="$(this).next()[0].value=this.value"/><input type="text" value="1" onchange="$(this).prev()[0].value=this.value" style="width: 20px;margin-left: 5px;" id="anyJumpTo" /><a class="pnav jump_btn">跳转至</a>';
+				}else{
+					table_doms[2].innerHTML = '<span id="show_total">共有'+total_tr+'条记录</span>'+tmp;
+				}
+				self.table_arr=[];
+				tmp ='';
+				for(i=0;i<data[1].data.length;i++){  //生成表格数据数组,数组为二维,每一行为一个数组作为一级数组,行数组第一项为本行html用于分页显示,余下项为本行的各列数据用于排序或查找
+					self.table_arr[i]=[];
+					tmp = [];
+					for(var j=0;j<data.length;j++){
+						self.table_arr[i][j]=data[j].data[i];
+						tmp.push('<td>'+(j==0?(others.chart_type=='no_chart' && others.dialog?('<a href="#" class="has_dialog">' + data[j].data[i] + '</a>'):data[j].data[i]):(typeof(data[j].data[i])=='number'?(Math.round(data[j].data[i]*100)/100):data[j].data[i]))+'</td>');
+					}
+					self.table_arr[i][0]="<tr>"+tmp.join("")+"</tr>";	
+				}
+				// 表格
+				$('#page_bar').find('.on')[0].click();  //切换至选中页
+				return ;
+			},
+			insertChart:function(data,chartType,chartPos){
+				var self=this,chart,total_pie =0,report_name = self.current_attachs.base.report_name;
+				chartPos=chartPos?chartPos:'canvasDiv';  //默认放置图表的位置
+				switch(chartType){
+					case 'pie':  //饼状图
+						var sortArr = [],pie_data=[],temp=[];
+						for(var i=data[0].data.length-1;i>=0;i--){
+							sortArr.push([data[0].data[i],data[1].data[i]]);
+						}
+						sortArr.sort(function(a,b){return b[1]-a[1]});
+						for(i=data[0].data.length-1;i>=0;i--){
+							data[0].data[i]=sortArr[i][0];
+							data[1].data[i]=sortArr[i][1];
+						}
+						for (var i = data[0].data.length - 1; i >= 0; i--) {
+							total_pie+=data[1].data[i];
+						}
+						for (var i = data[0].data.length - 1; i >= 0; i--) {
+							temp.push(data[0].data[i]);
+							temp.push(data[1].data[i]/total_pie*100);
+							pie_data.push(temp);
+							temp=[];
+						}
+						chart = new Highcharts.Chart({
+							chart: {
+								renderTo: chartPos,
+								type: chartType,
+								marginBottom: 35
+							},
+							title: {
+								text: report_name,
+								x: -20 //center
+							},
+							xAxis: {
+								categories: data.shift().data
+							},
+							yAxis: {
+								title:{
+									text:""
+								},
+								plotLines: [{
+									value: 0,
+									width: 1,
+									color: '#808080'
+								}]
+							},
+							plotOptions: {
+								pie: {
+									allowPointSelect: true,
+									cursor: 'pointer',
+									dataLabels: {
+										enabled: true,
+										color: '#000000',
+										connectorColor: '#000000',
+										formatter: function() {
+											return '<b>' + this.point.name + '</b>' + Math.round(this.y * 100) / 100 + '%<br/>  ('+Math.round(total_pie*this.y)/100+')';
+										}
+									}
+								}
+							},
+							tooltip: {
+								formatter: function() {
+									return '<b>' + Math.round(this.y * 100) / 100 + '%('+Math.round(total_pie*this.y)/100+')</b>';
+								}
+							},
+							legend: {
+								layout: 'vertical',
+								align: 'right',
+								verticalAlign: 'top',
+								x: -10,
+								y: 100,
+								borderWidth: 0
+							},
+							series: [{
+								type: 'pie',
+								data: pie_data
+							}]
+						});
+					break;
+					case 'line':  //线状图
+						var cat=data.shift().data
+						for (var i = cat.length - 1; i >= 0; i--) {
+							cat[i]=cat[i].substr(5,5)
+						};
+						chart = new Highcharts.Chart({
+							chart: {
+								renderTo: chartPos,
+								type: chartType,
+								marginRight: 130,
+								marginBottom: 35
+							},
+							title: {
+								text: report_name,
+								x: -20 //center
+							},
+							xAxis: {
+								categories: cat
+							},
+							yAxis: {
+								title:{
+									text:""
+								},
+								plotLines: [{
+									value: 0,
+									width: 1,
+									color: '#808080'
+								}]
+							},
+							tooltip: {
+								formatter: function() {
+										return '<b>'+Math.round(this.y*100)/100 +'</b>';
+								}
+							},
+
+							legend: {
+								layout: 'vertical',
+								align: 'right',
+								verticalAlign: 'top',
+								x: -10,
+								y: 100,
+								borderWidth: 0
+							},
+							series: data
+						});
+					break;
+					case 'area':  //面积图
+						var cat=data.shift().data;
+						for (var i = cat.length - 1; i >= 0; i--) {
+							cat[i]=cat[i].substr(5,5);
+						};
+						chart = new Highcharts.Chart({
+							chart: {
+								renderTo: chartPos,
+								type: chartType,
+								marginRight: 130,
+								marginBottom: 35
+							},
+							title: {
+								text: report_name,
+								x: -20 //center
+							},
+							xAxis: {
+								categories: cat,
+								tickmarkPlacement: 'on'
+							},
+							yAxis: {
+								title:{
+									text:""
+								},
+								plotLines: [{
+									value: 0,
+									width: 1,
+									color: '#808080'
+								}]
+							},
+							colors:[
+								'#E67E22',
+								'#F1C40F',
+								'#1ABC9C',
+								'#9B59B6',
+								'#34495E',
+								'#9F885C',
+								'#E74C3C',
+								'#86C23E',
+								'#3498DB',
+								'#494189',
+							],
+							tooltip: {
+								formatter: function() {
+									 return this.series.name+'<b>' + Math.round(this.y * 100) / 100 + '</b>/' + this.x;
+								}
+							},
+							plotOptions: {
+								area: {
+									stacking:'normal',
+									lineWidth:0,
+									marker: {
+										enabled:false,
+										states:{hover:{enabled:false}}
+									}
+								}
+							},
+							legend: {
+								layout: 'vertical',
+								align: 'right',
+								verticalAlign: 'top',
+								x: -10,
+								y: 100,
+								borderWidth: 0
+							},
+							series: data
+						});
+					break;
+					default:
+					break;
+				}
+			},
+			creatDialog:function(data1,data2){  //弹出图表
+				var self=this,start = $("#f span").html().substr(0, 10),end = $("#f span").html().substr(-10, 10);
+				self.dispLoading(true);
+				self.scroll_top_cache = $(window).scrollTop();  //保留当前所处位置
+				$.ajax({
+					url: '{{ server  }}/analysis/reporting?chart_name={{ chart  }}&report_name='+encodeURIComponent('下载来源')+'&start=' + start + '&end=' + end + '&app_name=' + encodeURIComponent(data1) + '&app_id=' + data2,
+					dataType: 'json',
+					success: function(data, textStatus, xhr) {
+					//called when successful
+						self.dispLoading(false);
+						$("body").append('<fieldset id="fieldset' + data2 + '" class="module" style="position:absolute;width:600px;top:'+((self.scroll_top_cache>400)?(self.scroll_top_cache+200):400)+'px;left:500px; "><h2 id="dragable' + data2 + '">下载来源分布</h2><div class="cancel" style="position: relative;top: -38px;float: right;right: 10px;font-size: 30px;cursor: pointer;line-height: 21px;" onclick="$(this).parent().remove()">x</div><div id="canvasDiv' + data2 + '"/><input type="button" value="关闭" style="width: 60px;color: #000;height:30px;margin-left:250px;margin-bottom:20px" onclick="$(this).parent().remove()"/></fieldset>');
+						$("#fieldset" + data2).easydrag().setHandler('dragable'+ data2);  //让图表可拖动
+						if(self.scroll_top_cache!=null){
+							$(window).scrollTop(self.scroll_top_cache);
+							self.scroll_top_cache = null;
+						}
+						if(0 == data.length || 0 == data[1].data.length) {
+							alert('没有数据')
+							return;
+						}
+						data.shift(); //从data 中去除downloadid
+						self.insertChart(data,'pie','canvasDiv' + data2);
+					}
+				})  
+			},
+			clearQueues:function(method){  //清扫图表请求队列,包含显示参数及返回数据
+				switch(method){
+					case 'remove_one':
+						this.return_data_arr.shift();
+						this.attache_queues.shift();
+					break;
+					case 'remove_all':
+						this.return_data_arr = [];
+						this.attache_queues = [];
+					break;
+					case 'left_one':
+						this.return_data_arr.splice(0,this.return_data_arr.length-1);
+						this.attache_queues.splice(0,this.attache_queues.length-1);
+					break;
+					default:
+					break;
+				}
+			},
+			dispLoading:function(method){
+				$('#loadingChart')[0].style.display = method?'block':'none';
+				return ;
+			},
+			addEvent:function(dom,event_type,func,other){
+				other = other?other:false;
+				dom.addEventListener(event_type,func,other);
+				return true;
+			}
+		}
+		var reporting = new ReportChart('{{ tagClouds }}');
+</script>
+{% endblock %}

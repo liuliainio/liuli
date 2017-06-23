@@ -1,0 +1,186 @@
+/* menu styles */
+
+#header {
+    overflow: visible;
+}
+
+#header #branding h1 {
+    margin: 0;
+    padding: 5px 10px;
+    height: 31px;
+}
+
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+
+#header ul li {
+    position: relative;
+    list-style: none;
+}
+
+#header ul li a {
+    white-space: nowrap;
+}
+
+#header #navigation-menu {
+    height: 33px; /*old 35px*/
+    z-index: 9999;
+    background-color:#004e7a; /*new */	
+   /* background: transparent url(../images/admin-tools.png) repeat-x 0 -205px; dele*/
+}
+
+#header #bookmark-button {
+    display:none !important;
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    right: 15px;
+    height: 25px;
+    width: 24px;
+    margin-top: 4px;
+    border: none;
+    text-indent: -5000px;
+    overflow: hidden;
+    background: transparent url(../images/admin-tools.png) no-repeat 0 -425px;
+}
+
+#header #bookmark-button.bookmarked {
+    background-position: 0 -445px;
+}
+
+#header ul#navigation-menu li {
+    float: left;
+}
+
+/*#header ul#navigation-menu li>a{
+	padding:9px 38px;
+}*/
+/*new add*/
+#header #navigation-menu >.menu-item  >a{
+    color:#fff;
+    font-weight:bold;
+}
+
+#header ul#navigation-menu li a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-right: 1px solid #0f6192; /*source #ededed*/
+    color: #555;
+    font-size:14px;
+    width:85px;
+}
+
+#header ul#navigation-menu li.disabled a {
+    color: #bbb;
+    cursor: default;
+}
+
+#header ul#navigation-menu li.first a {
+    margin: 5px 0 0 0;/*change 5px 0 0 12px to 5px 0 0 0*/
+    padding: 4px 25px 9px;
+    /* text-indent: 14px; disable*/
+   /* background: transparent url(../images/admin-tools.png) no-repeat 0 -385px; disable*/
+}
+
+#header ul#navigation-menu li span {
+    float: right;
+    height: 10px;
+    width: 8px;/*old 20px*/
+    background: transparent url(../images/admin-tools.png) no-repeat -10px -360px;/*old*/
+    margin-left:0px; /*new change*/
+}
+
+#header ul#navigation-menu li:hover,
+#header ul#navigation-menu li.over,
+#header ul#navigation-menu li.selected {	
+  background-color:#f0f0f0; /* background: url(../images/admin-tools.png) repeat-x 0 -245px;*/
+}
+/*new add*/
+#header ul#navigation-menu li>a:hover,
+#header ul#navigation-menu li:hover >a,
+#header ul#navigation-menu li.over>a,
+#header ul#navigation-menu li.selected>a {
+  color:#003d60;
+}
+#header ul#navigation-menu>li>a>span{
+  background: transparent url(../images/admin-tools.png) no-repeat -10px -360px;
+}
+#header ul#navigation-menu>li:hover >a>span,#header ul#navigation-menu>li.selected >a>span {
+  background-position:0px -360px;
+}
+
+#header ul#navigation-menu li ul {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: auto;
+    text-align:left; /*new add*/
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+#header ul#navigation-menu li ul li {
+    padding: 0;
+    float: none;
+    background: none;
+    z-index: 9999;
+}
+
+#header ul#navigation-menu li ul li a {
+    display: block;
+    border: 1px solid #ededed;
+    border-width: 0 1px 1px 1px;
+    text-transform: none;
+    min-width: 180px;
+}
+
+#header ul#navigation-menu li ul li span {
+    background-position: -10px -370px;
+}
+
+#header ul#navigation-menu li ul li ul {
+    left: 100%;
+    top: 0;
+    border-top: 1px solid #ededed;
+}
+
+#header ul#navigation-menu li ul li ul li a {
+    white-space: nowrap;
+}
+
+#header ul#navigation-menu li:hover ul li ul,
+#header ul#navigation-menu li.over ul li ul {
+    display: none;
+}
+
+#header ul#navigation-menu li:hover ul,
+#header ul#navigation-menu li.over ul,
+#header ul#navigation-menu li ul li:hover ul,
+#header ul#navigation-menu li ul li.over ul {
+    display: block;
+}
+
+#header ul#navigation-menu li:hover ul li,
+#header ul#navigation-menu li.over ul li,
+#header ul#navigation-menu li ul li:hover ul li,
+#header ul#navigation-menu li ul li.over ul li {
+    background: transparent url(../images/admin-tools.png) repeat-x 0 -285px;
+}
+
+#header ul#navigation-menu li ul li:hover,
+#header ul#navigation-menu li ul li.over,
+#header ul#navigation-menu li ul li ul li:hover,
+#header ul#navigation-menu li ul li ul li.over {
+   background:#88b6d0;  /*background: transparent url(../images/admin-tools.png) repeat-x 0 -245px;*/
+}
+
+#header ul#navigation-menu li.disabled a:hover,
+#header ul#navigation-menu li.disabled a.over {
+    background: none;
+}

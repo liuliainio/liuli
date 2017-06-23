@@ -1,0 +1,12 @@
+<!-- Just a placeholder -->
+<uwsgi>
+    <socket>:8700</socket> 
+    <stats>:40000</stats>
+    <env>DJANGO_SETTINGS_MODULE=estoreoperation.settings</env>
+    <module>django.core.handlers.wsgi:WSGIHandler()</module>
+    <processes>4</processes>
+    <master/>
+    <!-- request timeout -->
+    <harakiri>60</harakiri>
+    <daemonize>/var/app/log/operation/uwsgi.log</daemonize>
+</uwsgi>

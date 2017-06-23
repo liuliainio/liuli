@@ -1,0 +1,9 @@
+## pika bug:
+
+> BlockingConnection has no attribute disconnect
+
+refer: https://github.com/pika/pika/issues/351
+
+
+
+

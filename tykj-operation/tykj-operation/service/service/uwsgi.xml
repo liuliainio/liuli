@@ -1,0 +1,19 @@
+<uwsgi>
+    <socket>:7700</socket>
+    <env>DJANGO_SETTINGS_MODULE=estoreservice.settings</env>
+    <module>django.core.handlers.wsgi:WSGIHandler()</module>
+    <processes>10</processes>
+    <master />
+    <master-as-root />
+    <!-- request timeout -->
+    <harakiri>60</harakiri>
+    <harakiri-verbose/>
+    <!--<post-buffering>32768</post-buffering>-->
+    <daemonize>/var/app/log/service/uwsgi.log</daemonize>
+    <listen>1024</listen>
+    <socket-timeout>10</socket-timeout>
+    <stats>127.0.0.1:18085</stats>
+    <max-requests>100000</max-requests>
+    <reload-on-as>1536</reload-on-as>
+    <evil-reload-on-as>2048</evil-reload-on-as>
+</uwsgi>

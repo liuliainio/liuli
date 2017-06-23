@@ -1,0 +1,48 @@
+fieldset .targeting {
+    float:none;
+}
+
+#utcontainer {
+    margin: 0 10px 0 10px;
+}
+
+#utcontainer h3 {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    margin: 25px 0 0 0;
+}
+
+#utcontainer h3.first {
+    margin: 5px 0 0 0;
+}
+
+#utcontainer ul {
+    list-style: none;
+}
+
+#utcontainer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#utcontainer label {
+    width: 7em;
+}
+
+#utcontainer div.form-row {
+    border-bottom: none !important;
+}
+
+.uttips {
+    color: grey;
+    display: inline-block;
+    font-size: 80%;
+    padding: 3px 10px 0 0;
+    width: 3em !important;
+}
+
+.sep {
+    height: 20px;
+}

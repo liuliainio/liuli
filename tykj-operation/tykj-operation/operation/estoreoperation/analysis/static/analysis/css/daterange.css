@@ -1,0 +1,55 @@
+.date_range {
+    z-index: 5;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.date_range select {
+    margin-right: 0;
+}
+.date_range td,
+.date_range th {
+    border: none;
+}
+.date_range_start_end {
+    padding: 5px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    z-index: 2;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    background: #FFFFFF;
+    right: 0px;
+    top: 35px;
+    display: block;
+}
+.date_range_start_end_left {
+    padding: 5px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 2px #CCCCCC;
+    z-index: 2;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    width: 495px;
+    background: #FFFFFF;
+    left: 0px;
+    top: 35px;
+    display: block;
+}
+.date_range_start_end span.close {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: url(../images/close.png) no-repeat center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.date_range_start_end .datepicker {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.date_range_start_end .iconlink {
+    padding: 3px 8px;
+}

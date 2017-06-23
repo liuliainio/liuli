@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+
+PATH=/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user command
+0 * * * * root scan-apks >> /tmp/scan_apks.txt 2>&1

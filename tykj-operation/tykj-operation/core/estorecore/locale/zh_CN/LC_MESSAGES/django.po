@@ -1,0 +1,1717 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-04 17:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: admin/__init__.py:56
+msgid "None"
+msgstr "无"
+
+#: admin/__init__.py:97
+#, python-format
+msgid "Successfully deleted %(count)d %(items)s."
+msgstr "成功删除 %(count)d %(items)s."
+
+#: admin/__init__.py:100
+#, python-format
+msgid "Delete selected %(verbose_name_plural)s"
+msgstr "删除所选的 %(verbose_name_plural)s"
+
+#: admin/__init__.py:107
+#, python-format
+msgid "Successfully synced %(count)d %(items)s."
+msgstr "成功同步 %(count)d %(items)s."
+
+#: admin/__init__.py:110
+#, python-format
+msgid "Sync selected %(verbose_name_plural)s"
+msgstr "同步所选的 %(verbose_name_plural)s"
+
+#: admin/__init__.py:153
+#, python-format
+msgid "You can't publish not approved %(model)s: %(obj)s"
+msgstr "不能发布未能通过的 %(model)s: %(obj)s"
+
+#: admin/__init__.py:319
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was changed successfully, and successfully synced "
+"to production."
+msgstr "%(name)s \"%(obj)s\" 修改成功, 并成功同步到线上."
+
+#: admin/__init__.py:322
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was changed successfully, can't sync not reviewed "
+"%(name)s."
+msgstr "%(name)s \"%(obj)s\" 修改成功, 不能同步未审核的 %(name)s."
+
+#: admin/__init__.py:327
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was changed successfully."
+msgstr "%(name)s \"%(obj)s\" 修改成功."
+
+#: admin/__init__.py:337
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was added successfully, and successfully synced to "
+"production."
+msgstr "%(name)s \"%(obj)s\" 添加成功, 并成功同步到线上."
+
+#: admin/__init__.py:340
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was added successfully, can't sync not reviewed "
+"%(name)s."
+msgstr "%(name)s \"%(obj)s\" 添加成功, 不能同步未审核的 %(name)s."
+
+#: admin/filters.py:15 admin/filters.py:39 admin/filters.py:65
+msgid "All"
+msgstr "所有"
+
+#: admin/filters.py:40
+msgid "Equal to zero"
+msgstr "等于0"
+
+#: admin/filters.py:41
+msgid "Greater than zero"
+msgstr "大于0"
+
+#: admin/filters.py:66
+msgid "addition action"
+msgstr "添加操作"
+
+#: admin/filters.py:67
+msgid "change action"
+msgstr "修改操作"
+
+#: admin/filters.py:68
+msgid "deletion action"
+msgstr "删除操作"
+
+#: admin/sites.py:67
+msgid "Verify Code"
+msgstr "验证码"
+
+#: admin/sites.py:74
+msgid "Please enter verify code."
+msgstr "请输入验证码"
+
+#: admin/sites.py:76
+msgid "Please enter a correct verify code."
+msgstr "请输入正确的验证码"
+
+#: admin/sites.py:89
+msgid "Log in"
+msgstr "登录"
+
+#: admin/widgets.py:27
+msgid "Lookup"
+msgstr "查询"
+
+#: datasync/syncfrom.py:21
+#, python-format
+msgid "%(count)d %(items)s successfully sync data from production environment."
+msgstr "成功从线上同步 %(count)d %(items)s"
+
+#: datasync/syncfrom.py:25
+#, python-format
+msgid "No %(items)s need to sync to production environment."
+msgstr "没有需要同步的 %(items)s"
+
+#: models/app.py:54
+msgid "category name"
+msgstr "分类"
+
+#: models/app.py:55 models/app.py:102 models/app.py:336 models/app.py:478
+#: models/app.py:511 models/app.py:625 models/promotion.py:13
+msgid "description"
+msgstr "描述"
+
+#: models/app.py:56 models/app.py:105 models/app.py:203 models/app.py:338
+#: models/app.py:369 models/app.py:479 models/app.py:513 models/app.py:626
+#: models/promotion.py:15 models/push.py:13
+msgid "icon URL"
+msgstr "图标地址"
+
+#: models/app.py:57 models/app.py:59 models/push.py:14 models/push.py:16
+msgid "Please upload JPEG, PNG, GIF files, size: 64x64"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 64x64"
+
+#: models/app.py:58 models/app.py:107 models/app.py:205 models/app.py:340
+#: models/app.py:371 models/app.py:481 models/app.py:515 models/app.py:628
+#: models/promotion.py:17 models/promotion.py:93 models/push.py:15
+msgid "icon path"
+msgstr "图片路径"
+
+#: models/app.py:60
+msgid "level"
+msgstr "层级"
+
+#: models/app.py:63
+msgid "parent category"
+msgstr "上级分类"
+
+#: models/app.py:74
+msgid "application count"
+msgstr "应用数"
+
+#: models/app.py:82 models/app.py:250 models/app.py:335 models/app.py:408
+#: models/app.py:702 models/app.py:712 models/app.py:723 models/app.py:732
+#: models/app.py:740 models/app.py:748 models/app.py:757 models/app.py:766
+#: models/app.py:775 models/base.py:100
+msgid "clicks"
+msgstr "点击数"
+
+#: models/app.py:90 models/constants.py:94
+msgid "Category"
+msgstr "分类"
+
+#: models/app.py:91
+msgid "Categories"
+msgstr "分类"
+
+#: models/app.py:96 models/app.py:234
+msgid "tianyi status"
+msgstr "天翼状态"
+
+#: models/app.py:97 models/app.py:497 models/app.py:543 models/app.py:556
+#: models/app.py:569 models/app.py:580 models/app.py:593 models/app.py:621
+#: models/app.py:666 models/app.py:785 models/search.py:34
+msgid "application"
+msgstr "应用"
+
+#: models/app.py:98
+msgid "version"
+msgstr "版本名称"
+
+#: models/app.py:99 models/update.py:12
+msgid "version code"
+msgstr "版本号"
+
+#: models/app.py:100 models/app.py:179 models/app.py:248 models/app.py:320
+#: models/app.py:435 models/promotion.py:76 models/update.py:11
+msgid "source"
+msgstr "来源"
+
+#: models/app.py:101
+msgid "developer"
+msgstr "开发者"
+
+#: models/app.py:103 models/app.py:253 models/app.py:512
+msgid "price"
+msgstr "价格"
+
+#: models/app.py:104 models/app.py:337 models/app.py:368 models/app.py:558
+#: models/promotion.py:14
+msgid "publish date"
+msgstr "发布日期"
+
+#: models/app.py:106 models/app.py:108
+msgid "Please upload JPEG, PNG, GIF files, size: 72x72"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 72x72"
+
+#: models/app.py:109 models/update.py:22
+msgid "download URL"
+msgstr "下载地址"
+
+#: models/app.py:110 models/update.py:23
+msgid "download path"
+msgstr "下载路径"
+
+#: models/app.py:111
+msgid "size"
+msgstr "大小"
+
+#: models/app.py:112 models/update.py:19
+msgid "package hash"
+msgstr "程序包HASH值"
+
+#: models/app.py:113
+msgid "min sdk version"
+msgstr "最小SDK版本"
+
+#: models/app.py:114
+msgid "reviewed desc preview"
+msgstr "已审核描述、截图"
+
+#: models/app.py:116
+msgid "external app download url"
+msgstr "外部下载地址"
+
+#: models/app.py:117
+msgid "labels"
+msgstr "应用标签"
+
+#: models/app.py:118
+msgid "update_note"
+msgstr "更新日志"
+
+#: models/app.py:119
+msgid "tencent safe"
+msgstr "腾讯安全检测"
+
+#: models/app.py:171 models/app.py:202
+msgid "application version"
+msgstr "应用版本"
+
+#: models/app.py:178 models/app.py:319 models/constants.py:126
+#: models/constants.py:315
+msgid "Unknown"
+msgstr "未知"
+
+#: models/app.py:186 models/app.py:466 models/app.py:667
+msgid "rating"
+msgstr "评分"
+
+#: models/app.py:197
+msgid "Application Version"
+msgstr "应用版本"
+
+#: models/app.py:198
+msgid "Application Versions"
+msgstr "应用版本"
+
+#: models/app.py:204 models/app.py:206 models/promotion.py:46
+#: models/promotion.py:48
+msgid "Please upload JPEG, PNG, GIF files, size: 320x480"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 320x480"
+
+#: models/app.py:207
+msgid "icon title"
+msgstr "图片标题"
+
+#: models/app.py:228
+msgid "Preview Icon"
+msgstr "预览图片"
+
+#: models/app.py:229
+msgid "Preview Icons"
+msgstr "预览图片"
+
+#: models/app.py:233
+msgid "tianyi id"
+msgstr "天翼ID"
+
+#: models/app.py:235
+msgid "tianyi charge mode"
+msgstr "天翼收费模式"
+
+#: models/app.py:236 models/app.py:333
+msgid "name"
+msgstr "名称"
+
+#: models/app.py:237 models/update.py:9
+msgid "package name"
+msgstr "程序包名"
+
+#: models/app.py:238
+msgid "package signature"
+msgstr "程序包签名"
+
+#: models/app.py:239 models/app.py:254 models/app.py:441
+msgid "current version"
+msgstr "当前版本"
+
+#: models/app.py:240
+msgid "previous version"
+msgstr "上一个版本"
+
+#: models/app.py:241 models/app.py:366 models/app.py:701 models/push.py:18
+msgid "category"
+msgstr "分类"
+
+#: models/app.py:242 models/app.py:312
+msgid "sub category"
+msgstr "二级分类"
+
+#: models/app.py:245
+msgid "application tag"
+msgstr "标签"
+
+#: models/app.py:246 models/app.py:453
+msgid "has preview"
+msgstr "有预览"
+
+#: models/app.py:247 models/app.py:447
+msgid "versions"
+msgstr "版本数"
+
+#: models/app.py:249 models/app.py:710 models/app.py:721
+msgid "rate"
+msgstr "评分"
+
+#: models/app.py:251 models/app.py:713 models/app.py:724 models/app.py:749
+#: models/app.py:758 models/app.py:767 models/app.py:776 models/base.py:106
+msgid "downloads"
+msgstr "下载数"
+
+#: models/app.py:252 models/app.py:460
+msgid "reviews"
+msgstr "评论数"
+
+#: models/app.py:256
+msgid "app label"
+msgstr "应用标签"
+
+#: models/app.py:258
+msgid "blocked devices"
+msgstr "屏蔽设备"
+
+#: models/app.py:259
+msgid "Please use en separator when split device name."
+msgstr "请用英文逗号分隔符进行输入."
+
+#: models/app.py:261
+msgid "reviewed desc preview status"
+msgstr "描述、截图审核状态"
+
+#: models/app.py:263
+msgid "copycat"
+msgstr "疑似"
+
+#: models/app.py:265
+msgid "tianyi pay types"
+msgstr "天翼收费类型"
+
+#: models/app.py:266
+msgid "unpublished reason"
+msgstr "下架原因:"
+
+#: models/app.py:308 models/app.py:472
+msgid "full category"
+msgstr "完整分类"
+
+#: models/app.py:328
+msgid "Application"
+msgstr "应用"
+
+#: models/app.py:329
+msgid "Applications"
+msgstr "应用"
+
+#: models/app.py:334
+msgid "sub title"
+msgstr "子标题"
+
+#: models/app.py:339 models/app.py:341
+msgid "Please upload JPEG, PNG, GIF files, size: 68x68"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 68x68"
+
+#: models/app.py:342 models/promotion.py:19
+msgid "large icon URL"
+msgstr "大图标地址"
+
+#: models/app.py:343 models/app.py:345 models/promotion.py:20
+#: models/promotion.py:22
+msgid "Please upload JPEG, PNG, GIF files, size: 480x200"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 480x210"
+
+#: models/app.py:344 models/promotion.py:21
+msgid "large icon path"
+msgstr "大图片路径"
+
+#: models/app.py:346
+msgid "subject template"
+msgstr "专题模板"
+
+#: models/app.py:347
+msgid "Please select client subject display template"
+msgstr "请选择客户端专题模板"
+
+#: models/app.py:361
+msgid "Category Subject"
+msgstr "应用专题"
+
+#: models/app.py:362
+msgid "Category Subjects"
+msgstr "应用专题"
+
+#: models/app.py:367
+msgid "recommend type"
+msgstr "推荐类型"
+
+#: models/app.py:370 models/app.py:372 models/app.py:480 models/app.py:482
+msgid "Please upload JPEG, PNG, GIF files, size: 480x210"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 480x210"
+
+#: models/app.py:373
+msgid "area"
+msgstr "展示区域"
+
+#: models/app.py:374 models/app.py:559 models/app.py:623
+#: models/promotion.py:25 models/promotion.py:53
+msgid "user group"
+msgstr ""
+
+#: models/app.py:390 models/app.py:645 models/push.py:42
+#, python-format
+msgid "App-%(app_id)s-%(app_name)s"
+msgstr "应用-%(app_id)s-%(app_name)s "
+
+#: models/app.py:392 models/app.py:647 models/push.py:44
+#, python-format
+msgid "App with id %(app_id)s does not exists"
+msgstr "应用不存在 id %(app_id)s"
+
+#: models/app.py:396 models/app.py:651 models/push.py:48
+#, python-format
+msgid "Subject-%(subject_id)s-%(subject_name)s"
+msgstr "专题-%(subject_id)s-%(subject_name)s"
+
+#: models/app.py:398 models/app.py:653 models/push.py:50
+#, python-format
+msgid "Subject with id %(subject_id)s does not exists"
+msgstr "专题不存在 id %(subject_id)s"
+
+#: models/app.py:400 models/app.py:655
+msgid "attr readable"
+msgstr "属性"
+
+#: models/app.py:413
+msgid "Category Foucs Image"
+msgstr "Banner推荐"
+
+#: models/app.py:414
+msgid "Category Foucs Images"
+msgstr "Banner推荐"
+
+#: models/app.py:429
+msgid "app ID"
+msgstr "应用ID"
+
+#: models/app.py:476
+msgid "subject"
+msgstr "专题"
+
+#: models/app.py:477 models/app.py:510 models/app.py:624
+#: models/promotion.py:10 models/promotion.py:92 models/push.py:10
+#: models/update.py:28
+msgid "title"
+msgstr "标题"
+
+#: models/app.py:491
+msgid "Subject Item"
+msgstr "专题列表项"
+
+#: models/app.py:492
+msgid "Subject Items"
+msgstr "专题列表项"
+
+#: models/app.py:496 models/app.py:542 models/base.py:41
+msgid "No."
+msgstr "序号"
+
+#: models/app.py:498
+msgid "subject item"
+msgstr "专题列表项"
+
+#: models/app.py:505
+msgid "Subject Application"
+msgstr "专题应用"
+
+#: models/app.py:506
+msgid "Subject Applications"
+msgstr "专题应用"
+
+#: models/app.py:514 models/app.py:516
+msgid "Please upload JPEG, PNG, GIF files, size: 135x231"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 135x231"
+
+#: models/app.py:517 models/app.py:607
+msgid "list type"
+msgstr "列表类型"
+
+#: models/app.py:518
+msgid "need to be the same with huawei kuwan type"
+msgstr "必须和华为大平台的酷玩类型保持一致."
+
+#: models/app.py:519
+msgid "tianyi kuwan id"
+msgstr "天翼酷玩ID"
+
+#: models/app.py:519
+msgid "need to be the same with huaWei platform kuwan item id"
+msgstr "必须和华为大平台的酷玩套餐ID保持一致."
+
+#: models/app.py:537 models/app.py:538 models/app.py:544
+msgid "TianYi KuWan"
+msgstr "天翼酷玩"
+
+#: models/app.py:551
+msgid "KuWan Application"
+msgstr "天翼酷玩应用"
+
+#: models/app.py:552
+msgid "KuWan Applications"
+msgstr "天翼酷玩应用"
+
+#: models/app.py:557 models/base.py:49
+msgid "type"
+msgstr "类型"
+
+#: models/app.py:564
+msgid "Category Recommend Application"
+msgstr "推荐应用"
+
+#: models/app.py:565
+msgid "Category Recommend Applications"
+msgstr "推荐应用"
+
+#: models/app.py:575
+msgid "Prepared Application"
+msgstr "必备应用"
+
+#: models/app.py:576
+msgid "Prepared Applications"
+msgstr "必备应用"
+
+#: models/app.py:581
+msgid "boot app type"
+msgstr "装机必备类别"
+
+#: models/app.py:588
+msgid "Boot Application"
+msgstr "装机必备"
+
+#: models/app.py:589
+msgid "Boot Applications"
+msgstr "装机必备"
+
+#: models/app.py:594
+msgid "short description"
+msgstr "短描述"
+
+#: models/app.py:599
+msgid "Top Application"
+msgstr "应用榜单"
+
+#: models/app.py:600
+msgid "Top Applications"
+msgstr "应用榜单"
+
+#: models/app.py:604
+msgid "app list name"
+msgstr "应用列表名称"
+
+#: models/app.py:605
+msgid "code name"
+msgstr "代码名"
+
+#: models/app.py:606
+msgid "belong to"
+msgstr "属于"
+
+#: models/app.py:615 models/app.py:616
+msgid "AppList"
+msgstr "应用列表"
+
+#: models/app.py:622
+msgid "app list"
+msgstr "应用列表"
+
+#: models/app.py:627 models/app.py:629
+msgid "Please upload JPEG, PNG, GIF files"
+msgstr "请上传 JPEG, PNG 或 GIF文件"
+
+#: models/app.py:630 models/push.py:28
+msgid "extra info"
+msgstr "扩展信息"
+
+#: models/app.py:659 models/app.py:660
+msgid "AppListItem"
+msgstr "应用列表项"
+
+#: models/app.py:664 models/promotion.py:72
+msgid "user ID"
+msgstr "用户ID"
+
+#: models/app.py:665
+msgid "user name"
+msgstr "用户名"
+
+#: models/app.py:668
+msgid "comment"
+msgstr "评论"
+
+#: models/app.py:669 models/promotion.py:74
+msgid "created time"
+msgstr "创建时间"
+
+#: models/app.py:670 models/app.py:786 models/base.py:15
+msgid "hided"
+msgstr "已隐藏"
+
+#: models/app.py:671 models/base.py:14 models/constants.py:34
+msgid "published"
+msgstr "已发布"
+
+#: models/app.py:672 models/base.py:16
+msgid "sync status"
+msgstr "同步状态"
+
+#: models/app.py:673 models/base.py:17
+msgid "review status"
+msgstr "审核状态"
+
+#: models/app.py:674 models/base.py:61 models/promotion.py:24
+msgid "tag"
+msgstr "标记"
+
+#: models/app.py:679
+msgid "review ID"
+msgstr "评论ID"
+
+#: models/app.py:683
+msgid "application name and version"
+msgstr "应用名称和版本"
+
+#: models/app.py:695
+msgid "Application Review"
+msgstr "应用评论"
+
+#: models/app.py:696
+msgid "Application Reviews"
+msgstr "应用评论"
+
+#: models/app.py:709
+msgid "app"
+msgstr "应用"
+
+#: models/app.py:711 models/app.py:722
+msgid "ratings"
+msgstr "评论数"
+
+#: models/app.py:720
+msgid "appversion"
+msgstr "版本"
+
+#: models/app.py:731
+msgid "categoryfoucsimage"
+msgstr "Banner推荐"
+
+#: models/app.py:739
+msgid "categorysubject"
+msgstr "应用专题"
+
+#: models/app.py:747
+msgid "categoryrecommend"
+msgstr "分类"
+
+#: models/app.py:756
+msgid "preparedapp"
+msgstr "必备应用"
+
+#: models/app.py:765
+msgid "bootapp"
+msgstr "装机必备"
+
+#: models/app.py:774
+msgid "topapp"
+msgstr "榜单应用"
+
+#: models/app.py:783
+msgid "app model"
+msgstr "应用模型"
+
+#: models/app.py:784
+msgid "object pk"
+msgstr "对象主键"
+
+#: models/app.py:787
+msgid "model name"
+msgstr "模型名"
+
+#: models/app.py:788 models/base.py:11
+msgid "created_time"
+msgstr "创建时间"
+
+#: models/app.py:792
+msgid "Check app status"
+msgstr "检测应用状态"
+
+#: models/app.py:796
+msgid "mask off package name"
+msgstr "屏蔽包名"
+
+#: models/app.py:797
+msgid "mask off reason"
+msgstr "屏蔽原因"
+
+#: models/app.py:801
+msgid "App Mask Off"
+msgstr "应用屏蔽"
+
+#: models/app.py:810
+msgid "App list"
+msgstr "应用列表管理"
+
+#: models/app.py:811
+msgid "App Channel"
+msgstr "禁升级应用列表"
+
+#: models/base.py:10 models/base.py:29
+msgid "creator"
+msgstr "创建者"
+
+#: models/base.py:12 models/base.py:23
+msgid "modifier"
+msgstr "最后编辑"
+
+#: models/base.py:13
+msgid "last modified"
+msgstr "更新时间"
+
+#: models/base.py:50
+msgid "attribute"
+msgstr "属性"
+
+#: models/base.py:58
+msgid "date"
+msgstr "日"
+
+#: models/base.py:59
+msgid "month"
+msgstr "月"
+
+#: models/base.py:60
+msgid "year"
+msgstr "年"
+
+#: models/constants.py:17
+msgid "open url"
+msgstr ""
+
+#: models/constants.py:21
+msgid "phone number"
+msgstr ""
+
+#: models/constants.py:22
+msgid "none"
+msgstr ""
+
+#: models/constants.py:26 models/constants.py:33 models/constants.py:43
+#: models/constants.py:346
+msgid "not set"
+msgstr "未配置"
+
+#: models/constants.py:35
+msgid "unpublished"
+msgstr "已下架"
+
+#: models/constants.py:36
+msgid "eq than tianyi"
+msgstr "和天翼版本相同"
+
+#: models/constants.py:37
+msgid "old than tianyi"
+msgstr "比天翼版本低"
+
+#: models/constants.py:38
+msgid "new than tianyi"
+msgstr "比天翼版本高"
+
+#: models/constants.py:39
+msgid "in blacklist"
+msgstr "禁升级黑名单"
+
+#: models/constants.py:44
+msgid "by time"
+msgstr "按次"
+
+#: models/constants.py:45
+msgid "monthly"
+msgstr "包月"
+
+#: models/constants.py:46
+msgid "timely"
+msgstr "包次"
+
+#: models/constants.py:47
+msgid "free"
+msgstr "免费"
+
+#: models/constants.py:48
+msgid "charge timely"
+msgstr "包次收费"
+
+#: models/constants.py:49
+msgid "charge monthly"
+msgstr "包月收费"
+
+#: models/constants.py:53 models/constants.py:73
+msgid "default"
+msgstr "默认"
+
+#: models/constants.py:55
+msgid "banner"
+msgstr "BANNER"
+
+#: models/constants.py:56
+msgid "game list"
+msgstr "游戏列表"
+
+#: models/constants.py:60
+msgid "all not review"
+msgstr "全部未审核"
+
+#: models/constants.py:61
+msgid "current not review"
+msgstr "当前版本未审核"
+
+#: models/constants.py:62
+msgid "current review"
+msgstr "当前版本已审核"
+
+#: models/constants.py:66
+msgid "top area big banner"
+msgstr "顶部大BANNER"
+
+#: models/constants.py:67
+msgid "double column small banner"
+msgstr "双列小BANNER"
+
+#: models/constants.py:68
+msgid "single column middle banner"
+msgstr "单列横幅BANNER"
+
+#: models/constants.py:69
+msgid "double column game app"
+msgstr "双列APP"
+
+#: models/constants.py:74
+msgid "jail break"
+msgstr "越狱"
+
+#: models/constants.py:75
+msgid "theme"
+msgstr "主题"
+
+#: models/constants.py:76
+msgid "wallpaper"
+msgstr "壁纸"
+
+#: models/constants.py:80
+msgid "general"
+msgstr "通用"
+
+#: models/constants.py:81
+msgid "android phone"
+msgstr "Android"
+
+#: models/constants.py:82
+msgid "android pad"
+msgstr "Android Pad"
+
+#: models/constants.py:83
+msgid "android phone & pad"
+msgstr "Android和Android Pad"
+
+#: models/constants.py:84
+msgid "iphone"
+msgstr "iPhone"
+
+#: models/constants.py:85
+msgid "ipad"
+msgstr "iPad"
+
+#: models/constants.py:86
+msgid "iphone & ipad"
+msgstr "iPhone和iPad"
+
+#: models/constants.py:90
+msgid "CT App Store"
+msgstr "天翼空间"
+
+#: models/constants.py:95
+msgid "Sub Category"
+msgstr "二级分类"
+
+#: models/constants.py:99
+msgid "Manual"
+msgstr "手动添加"
+
+#: models/constants.py:100
+msgid "Developer uploaded"
+msgstr "开发者上传"
+
+#: models/constants.py:101
+msgid "Auto crawled"
+msgstr "自动抓取"
+
+#: models/constants.py:102
+msgid "hiapk.com"
+msgstr "hiapk"
+
+#: models/constants.py:103
+msgid "goapk.com"
+msgstr "goapk"
+
+#: models/constants.py:104
+msgid "nduoa.com"
+msgstr "nduoa"
+
+#: models/constants.py:105
+msgid "appchina.com"
+msgstr "appchina"
+
+#: models/constants.py:106
+msgid "mumayi.com"
+msgstr "mumayi"
+
+#: models/constants.py:107
+msgid "as.baidu.com"
+msgstr "百度应用市场"
+
+#: models/constants.py:108
+msgid "zhushou.360.cn"
+msgstr "360手机助手"
+
+#: models/constants.py:109
+msgid "wandoujia.com"
+msgstr "豌豆荚"
+
+#: models/constants.py:110
+msgid "myapp.com"
+msgstr "应用宝"
+
+#: models/constants.py:127
+msgid "Safe"
+msgstr "安全"
+
+#: models/constants.py:128
+msgid "Risk"
+msgstr "风险"
+
+#: models/constants.py:129
+msgid "Top App"
+msgstr "首发"
+
+#: models/constants.py:130
+msgid "Hot App"
+msgstr "最热"
+
+#: models/constants.py:131
+msgid "Recommend App"
+msgstr "推荐"
+
+#: models/constants.py:132
+msgid "Charge App"
+msgstr "收费"
+
+#: models/constants.py:136 models/constants.py:192
+msgid "Newest"
+msgstr "飙升最快"
+
+#: models/constants.py:137 models/constants.py:193
+msgid "Hottest"
+msgstr "最热"
+
+#: models/constants.py:138
+msgid "Matchest"
+msgstr "精品推荐"
+
+#: models/constants.py:139
+msgid "Home new"
+msgstr "首发"
+
+#: models/constants.py:157
+msgid "Need Sync"
+msgstr "需要同步"
+
+#: models/constants.py:158
+msgid "Synced"
+msgstr "已同步"
+
+#: models/constants.py:162
+msgid "Disabled"
+msgstr "已禁用"
+
+#: models/constants.py:163
+msgid "Pre_release"
+msgstr "预发布"
+
+#: models/constants.py:164
+msgid "Published"
+msgstr "已发布"
+
+#: models/constants.py:168
+msgid "Not Reviewed"
+msgstr "待审批"
+
+#: models/constants.py:169
+msgid "Approved"
+msgstr "通过"
+
+#: models/constants.py:170
+msgid "Rejected"
+msgstr "未通过"
+
+#: models/constants.py:174
+msgid "No Clicks"
+msgstr "无点击动作"
+
+#: models/constants.py:175
+msgid "Embedded into Website"
+msgstr "客户端内嵌页"
+
+#: models/constants.py:176
+msgid "WAP"
+msgstr "WAP页面"
+
+#: models/constants.py:177 models/constants.py:214 models/constants.py:226
+msgid "App Details Page"
+msgstr "应用详情页"
+
+#: models/constants.py:178 models/constants.py:215 models/constants.py:228
+msgid "Subject Information"
+msgstr "专题信息"
+
+#: models/constants.py:179 models/constants.py:213 models/constants.py:225
+msgid "URL"
+msgstr "URL"
+
+#: models/constants.py:180
+msgid "Tianyi Kuwan"
+msgstr "天翼酷玩列表"
+
+#: models/constants.py:181
+msgid "Tianyi Quan Neng Wan"
+msgstr "天翼全能玩"
+
+#: models/constants.py:185
+msgid "No Status"
+msgstr "无"
+
+#: models/constants.py:186
+msgid "Hot"
+msgstr "热"
+
+#: models/constants.py:187
+msgid "Picked"
+msgstr "精品"
+
+#: models/constants.py:188
+msgid "New"
+msgstr "最新"
+
+#: models/constants.py:194
+msgid "Expired"
+msgstr "过期"
+
+#: models/constants.py:198
+msgid "Top area"
+msgstr "排行"
+
+#: models/constants.py:199
+msgid "Recommend area"
+msgstr "首页推荐"
+
+#: models/constants.py:203
+msgid "Real data"
+msgstr "真实数据"
+
+#: models/constants.py:204
+msgid "Fake data"
+msgstr "人工数据"
+
+#: models/constants.py:208
+msgid "order type"
+msgstr "订购类套餐"
+
+#: models/constants.py:209
+msgid "On demand type"
+msgstr "点播类套餐"
+
+#: models/constants.py:216
+msgid "Create Short Cut (Click into app detail page)"
+msgstr "创建快捷方式到桌面 (点击进入详情页面)"
+
+#: models/constants.py:217
+msgid "Create Short Cut (Click to download app)"
+msgstr "创建快捷方式到桌面 (点击下载应用)"
+
+#: models/constants.py:218
+msgid "Create Short Cut (Click to open url)"
+msgstr "创建快捷方式到桌面 (点击打开URL)"
+
+#: models/constants.py:219 models/constants.py:227
+msgid "Download or Launch App"
+msgstr "下载应用"
+
+#: models/constants.py:220
+msgid "Download app in background"
+msgstr "后台下载应用"
+
+#: models/constants.py:221
+msgid "Launch app in background"
+msgstr "后台打开应用"
+
+#: models/constants.py:232
+msgid "notification"
+msgstr "消息"
+
+#: models/constants.py:233
+msgid "dialog"
+msgstr "对话框"
+
+#: models/constants.py:237
+msgid "Update"
+msgstr "更新"
+
+#: models/constants.py:238
+msgid "Cancel"
+msgstr "取消"
+
+#: models/constants.py:242
+msgid "Samsung"
+msgstr "三星"
+
+#: models/constants.py:243
+msgid "Huawei"
+msgstr "华为"
+
+#: models/constants.py:244
+msgid "ZTE"
+msgstr "中兴"
+
+#: models/constants.py:245
+msgid "HTC"
+msgstr "HTC"
+
+#: models/constants.py:246
+msgid "Motorola"
+msgstr "摩托罗拉"
+
+#: models/constants.py:247
+msgid "LG"
+msgstr "LG"
+
+#: models/constants.py:248
+msgid "Lenovo"
+msgstr "联想"
+
+#: models/constants.py:249
+msgid "Google"
+msgstr "谷歌"
+
+#: models/constants.py:250
+msgid "XIAOMI"
+msgstr "小米"
+
+#: models/constants.py:251
+msgid "Emulational Phone"
+msgstr "低端山寨机"
+
+#: models/constants.py:272
+msgid "China Mobile"
+msgstr "移动"
+
+#: models/constants.py:273
+msgid "China Unicom"
+msgstr "联通"
+
+#: models/constants.py:274
+msgid "China Telecom"
+msgstr "电信"
+
+#: models/constants.py:275
+msgid "No Sim"
+msgstr "无卡用户"
+
+#: models/constants.py:279
+msgid "Anhui"
+msgstr "安徽"
+
+#: models/constants.py:280
+msgid "Beijing"
+msgstr "北京"
+
+#: models/constants.py:281
+msgid "Chongqing"
+msgstr "重庆"
+
+#: models/constants.py:282
+msgid "Fujian"
+msgstr "福建"
+
+#: models/constants.py:283
+msgid "Ganshu"
+msgstr "甘肃"
+
+#: models/constants.py:284
+msgid "Guangdong"
+msgstr "广东"
+
+#: models/constants.py:285
+msgid "Guangxi"
+msgstr "广西"
+
+#: models/constants.py:286
+msgid "Guizhou"
+msgstr "贵州"
+
+#: models/constants.py:287
+msgid "Hainan"
+msgstr "海南"
+
+#: models/constants.py:288
+msgid "Hebei"
+msgstr "河北"
+
+#: models/constants.py:289
+msgid "Heinan"
+msgstr "河南"
+
+#: models/constants.py:290
+msgid "Heilongjiang"
+msgstr "黑龙江"
+
+#: models/constants.py:291
+msgid "Hubei"
+msgstr "湖北"
+
+#: models/constants.py:292
+msgid "Hunan"
+msgstr "湖南"
+
+#: models/constants.py:293
+msgid "Jilin"
+msgstr "吉林"
+
+#: models/constants.py:294
+msgid "Jiangsu"
+msgstr "江苏"
+
+#: models/constants.py:295
+msgid "Jiangxi"
+msgstr "江西"
+
+#: models/constants.py:296
+msgid "Liaoning"
+msgstr "辽宁"
+
+#: models/constants.py:297
+msgid "Neimenggu"
+msgstr "内蒙古"
+
+#: models/constants.py:298
+msgid "Ningxia"
+msgstr "宁夏"
+
+#: models/constants.py:299
+msgid "Qinghai"
+msgstr "青海"
+
+#: models/constants.py:300
+msgid "Shandong"
+msgstr "山东"
+
+#: models/constants.py:301
+msgid "Shanxi"
+msgstr "山西"
+
+#: models/constants.py:302
+msgid "Shannxi"
+msgstr "陕西"
+
+#: models/constants.py:303
+msgid "Shanghai"
+msgstr "上海"
+
+#: models/constants.py:304
+msgid "Sichuan"
+msgstr "四川"
+
+#: models/constants.py:305
+msgid "Tianjin"
+msgstr "天津"
+
+#: models/constants.py:306
+msgid "Xizang"
+msgstr "西藏"
+
+#: models/constants.py:307
+msgid "Xinjiang"
+msgstr "新疆"
+
+#: models/constants.py:308
+msgid "Yunnan"
+msgstr "云南"
+
+#: models/constants.py:309
+msgid "Zhejiang"
+msgstr "浙江"
+
+#: models/constants.py:313
+msgid "Male"
+msgstr "男"
+
+#: models/constants.py:314
+msgid "Female"
+msgstr "女"
+
+#: models/constants.py:319
+msgid "Single"
+msgstr "单身"
+
+#: models/constants.py:320
+msgid "in a relationship"
+msgstr "有交往对象"
+
+#: models/constants.py:321
+msgid "Married"
+msgstr "已婚"
+
+#: models/constants.py:325
+msgid "0-10"
+msgstr "0-10"
+
+#: models/constants.py:326
+msgid "10-20"
+msgstr "10-20"
+
+#: models/constants.py:327
+msgid "20-30"
+msgstr "20-30"
+
+#: models/constants.py:328
+msgid "30-40"
+msgstr "30-40"
+
+#: models/constants.py:329
+msgid "40-50"
+msgstr "40-50"
+
+#: models/constants.py:330
+msgid "50-60"
+msgstr "50-60"
+
+#: models/constants.py:331
+msgid "60+"
+msgstr "60以上"
+
+#: models/constants.py:335
+msgid "push directly"
+msgstr "直接推送"
+
+#: models/constants.py:336
+msgid "smart distribution"
+msgstr "智能分发"
+
+#: models/constants.py:340
+msgid "go up"
+msgstr "上升"
+
+#: models/constants.py:341
+msgid "no change"
+msgstr "无变化"
+
+#: models/constants.py:342
+msgid "go down"
+msgstr "下降"
+
+#: models/constants.py:347
+msgid "template 1"
+msgstr "模板1"
+
+#: models/constants.py:348
+msgid "template 2"
+msgstr "模板2"
+
+#: models/constants.py:349
+msgid "template 3"
+msgstr "模板3"
+
+#: models/constants.py:351
+#, fuzzy
+msgid "tainyi sepcial"
+msgstr "天翼ID"
+
+#: models/promotion.py:11 models/promotion.py:49
+msgid "start date"
+msgstr "开始日期"
+
+#: models/promotion.py:12 models/promotion.py:50
+msgid "end date"
+msgstr "结束日期"
+
+#: models/promotion.py:16 models/promotion.py:18
+msgid "Please upload JPEG, PNG, GIF files, size: 120x144"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 120x144"
+
+#: models/promotion.py:23 models/push.py:25
+msgid "status"
+msgstr "状态"
+
+#: models/promotion.py:39
+msgid "Activity"
+msgstr "活动"
+
+#: models/promotion.py:40
+msgid "Activities"
+msgstr "活动"
+
+#: models/promotion.py:44
+msgid "picture name"
+msgstr "图片名称"
+
+#: models/promotion.py:45
+msgid "picture URL"
+msgstr "图片地址"
+
+#: models/promotion.py:47
+msgid "picture path"
+msgstr "图片路径"
+
+#: models/promotion.py:51
+msgid "is default"
+msgstr "是否默认"
+
+#: models/promotion.py:52
+msgid "search keyword"
+msgstr "搜索关键字"
+
+#: models/promotion.py:67
+msgid "Login Picture"
+msgstr "闪图"
+
+#: models/promotion.py:68
+msgid "Login Pictures"
+msgstr "闪图"
+
+#: models/promotion.py:73 models/push.py:11 models/push.py:59
+msgid "content"
+msgstr "内容"
+
+#: models/promotion.py:78
+msgid "extras"
+msgstr "扩展信息"
+
+#: models/promotion.py:80
+msgid "app key"
+msgstr "应用key"
+
+#: models/promotion.py:87
+msgid "Feedback"
+msgstr "用户反馈"
+
+#: models/promotion.py:88
+msgid "Feedbacks"
+msgstr "用户反馈"
+
+#: models/promotion.py:94
+#, fuzzy
+msgid "Please upload JPEG, PNG, GIF files, size: 120x60"
+msgstr "请上传 JPEG, PNG 或 GIF文件, 大小: 120x144"
+
+#: models/promotion.py:95 models/push.py:23 models/update.py:61
+msgid "action"
+msgstr "操作"
+
+#: models/promotion.py:96 models/push.py:24
+msgid "value"
+msgstr "值"
+
+#: models/promotion.py:97
+msgid "parameter"
+msgstr "参数值"
+
+#: models/promotion.py:98
+#, fuzzy
+msgid "condition"
+msgstr "操作"
+
+#: models/promotion.py:111
+msgid "LocalEntry"
+msgstr "本地Banner"
+
+#: models/promotion.py:112
+msgid "LocalEntries"
+msgstr "本地Banner"
+
+#: models/push.py:12
+msgid "link URL"
+msgstr "链接地址"
+
+#: models/push.py:17
+msgid "client id"
+msgstr "客户端ID"
+
+#: models/push.py:19
+msgid "invalid before"
+msgstr "有效起始时间"
+
+#: models/push.py:20
+msgid "invalid after"
+msgstr "有效终止时间"
+
+#: models/push.py:21
+msgid "short message"
+msgstr "短消息"
+
+#: models/push.py:22
+msgid "locales"
+msgstr "区域语言"
+
+#: models/push.py:26
+msgid "target"
+msgstr "目标"
+
+#: models/push.py:27
+msgid "display area"
+msgstr "展示方式"
+
+#: models/push.py:53
+msgid "value readable"
+msgstr "值"
+
+#: models/push.py:63
+msgid "Message"
+msgstr "推送消息"
+
+#: models/push.py:64
+msgid "Messages"
+msgstr "推送消息"
+
+#: models/search.py:9 models/search.py:33
+msgid "keyword"
+msgstr "关键字"
+
+#: models/search.py:10
+msgid "search count"
+msgstr "搜索次数"
+
+#: models/search.py:11
+msgid "search trend"
+msgstr "搜索趋势"
+
+#: models/search.py:28 models/search.py:41
+msgid "Search"
+msgstr "搜索"
+
+#: models/search.py:29
+msgid "Search Keyword label"
+msgstr "搜索关键字"
+
+#: models/search.py:30
+msgid "Search Keywords label"
+msgstr "搜索关键字"
+
+#: models/search.py:35
+msgid "location"
+msgstr "排位"
+
+#: models/search.py:42
+msgid "Keyword Location"
+msgstr "关键字排位"
+
+#: models/search.py:43
+msgid "Keywords Location"
+msgstr "关键字排位"
+
+#: models/update.py:10
+msgid "version name"
+msgstr "版本名"
+
+#: models/update.py:13
+msgid "os"
+msgstr "系统"
+
+#: models/update.py:14
+msgid "os version"
+msgstr "版本名称"
+
+#: models/update.py:15
+msgid "resolution"
+msgstr "分辨率"
+
+#: models/update.py:16
+msgid "cpu"
+msgstr "CPU"
+
+#: models/update.py:17
+msgid "model"
+msgstr "模型"
+
+#: models/update.py:18
+msgid "rom"
+msgstr "ROM"
+
+#: models/update.py:21
+msgid "device"
+msgstr "设备型号"
+
+#: models/update.py:24
+msgid "is force"
+msgstr "是否强制"
+
+#: models/update.py:25
+msgid "is auto"
+msgstr "是否自动"
+
+#: models/update.py:26
+msgid "is patch"
+msgstr "增量更新"
+
+#: models/update.py:27
+msgid "channel promote"
+msgstr "渠道推广"
+
+#: models/update.py:29
+msgid "content title"
+msgstr "内容标题"
+
+#: models/update.py:30
+msgid "package size"
+msgstr "程序包大小"
+
+#: models/update.py:31
+msgid "change log"
+msgstr "修改日志"
+
+#: models/update.py:55
+msgid "Update Application"
+msgstr "版本更新"
+
+#: models/update.py:56
+msgid "Update Applications"
+msgstr "版本更新"
+
+#: models/update.py:60
+msgid "update application"
+msgstr "版本更新"
+
+#: models/update.py:62
+msgid "button name"
+msgstr "按钮名称"
+
+#: models/update.py:63
+msgid "order"
+msgstr "排序"
+
+#: models/update.py:77
+msgid "Update Button"
+msgstr "更新按钮"
+
+#: models/update.py:78
+msgid "Update Buttons"
+msgstr "更新按钮"
+
+#: models/widgets.py:11
+msgid "view img"
+msgstr "查看图片"

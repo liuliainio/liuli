@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+PATH=/usr/lib/:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# m h dom mon dow user	command
+
+0 10	* * 1	root    (cd /var/app/enabled/MarketSearchCrawler/scripts/clean_apk/ && ./clean_apk.sh >> /tmp/spider_clean_apk.log 2>&1)

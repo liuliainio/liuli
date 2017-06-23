@@ -1,0 +1,78 @@
+
+# how to check error
+
+1. ct-crawler2: grep 'INSERT APP \[' /tmp/spider_update.*.log
+2. ct-crawler2, ct-crawler1, ct-crawler3: grep 'star! size' /tmp/downloader_*.log
+3. ct-crawler:  grep 'download file from' /tmp/spider_image*.log
+4. ct-crawler2: grep 'INSERT APK' /tmp/merge_apk.log
+
+
+
+## m.baidu.com: post
+
+http://m.baidu.com/appsrv?native_api=1&pname={com.dragon.android.pandaspace}&action=detail
+.result.data.[versioncode|versionname]
+
+
+http://m.baidu.com/appsrv?native_api=1&action=recommend&sorttype=soft&pn={0}
+.result.data[n].[packagename|versioncode|versionname]
+
+
+http://m.baidu.com/appsrv?sorttype=game&action=recommend&native_api=1&pn=0
+.result.data[n].[packagename|versioncode|versionname]
+
+
+## wandoujia.com: get
+
+http://apps.wandoujia.com/api/v1/feeds?opt_fields=adsCursor,data.app.apks.compatible,data.app.apks.incompatibleDetail,data.reason.*,data.app.title,data.app.packageName,data.app.ad,data.app.icons.px78,data.app.installedCountStr,data.app.apks.downloadUrl.url,data.app.apks.bytes,data.app.apks.verified,data.app.apks.versionName,data.app.apks.versionCode,data.app.detailParam,data.app.imprUrl,data.app.stat.weeklyStr,data.app.exclusiveBadge,data.app.apks.md5,data.app.editorComment,data.app.award.issue,data.app.apks.superior,data.app.apks.paidType&area=index&ads_start=0&start=0&max=40
+
+.data[n].app.packageName
+.data[n].app.apks[0].[versionCode|versionName]
+
+
+http://apps.wandoujia.com/api/v1/feeds?opt_fields=adsCursor,data.app.apks.compatible,data.app.apks.incompatibleDetail,data.reason.*,data.app.title,data.app.packageName,data.app.ad,data.app.icons.px78,data.app.installedCountStr,data.app.apks.downloadUrl.url,data.app.apks.bytes,data.app.apks.verified,data.app.apks.versionName,data.app.apks.versionCode,data.app.detailParam,data.app.imprUrl,data.app.stat.weeklyStr,data.app.exclusiveBadge,data.app.apks.md5,data.app.editorComment,data.app.award.issue,data.app.apks.superior,data.app.apks.paidType&area=game&ads_start=0&start=0&max=40
+
+.data[n].app.packageName
+.data[n].app.apks[0].[versionCode|versionName]
+
+
+http://apps.wandoujia.com/api/v1/apps?opt_fields=apks.compatible,apks.incompatibleDetail,title,packageName,ad,icons.px78,installedCountStr,apks.downloadUrl.url,apks.bytes,apks.verified,apks.versionName,apks.versionCode,detailParam,imprUrl,stat.weeklyStr,exclusiveBadge,apks.md5,editorComment,apks.paidType&type=weeklytop&start=0&max=40
+
+[n].app.packageName
+[n].app.apks[0].[versionCode|versionName]
+
+
+http://apps.wandoujia.com/api/v1/apps/{com.qvod.player}?opt_fields=apks.compatible,apks.incompatibleDetail,ad,apks.adsType,apks.beta,apks.bytes,apks.downloadUrl.*,apks.size,apks.versionCode,apks.versionName,apks.securityStatus,apks.md5,apks.permissionLevel,apks.superior,apks.dangerousPermissions,apks.permissions,apks.securityDetail.*,apks.resolution,categories.alias,categories.name,description,title,commentsCount,likeCount,dislikesCount,installedCountStr,icons.px78,packageName,id,likesRate,screenshots.*,apks.verified,apks.paidType
+
+.packageName
+.apks[0].[versionCode|versionName]
+
+
+## zhushou.360.cn: get
+
+http://openbox.mobilem.360.cn/AppStore/getRecomendAppsBytype?type=1&start=0&count=30
+http://openbox.mobilem.360.cn/AppStore/getRecomendAppsBytype?type=2&start=0&count=30
+
+.data[n].[apkid|version_code|version_name]
+
+http://openboxcdn.mobilem.360.cn/AppStore/getTopapplist?type=1&order=down&start=0&count=20
+http://openboxcdn.mobilem.360.cn/AppStore/getTopapplist?type=2&order=down&start=0&count=20
+.data[n].[apkid|version_code|version_name]
+
+http://openboxcdn.mobilem.360.cn/mintf/getAppInfoByIds?pname={com.android.vending}&market_id=360market
+.data[0].[apkid|version_code|version_name]
+
+
+
+##  91: get
+
+http://bbx2.sj.91.com/softs.ashx?act=289&iv=1&pi=2
+.Result.items[n].[identifier|versionCode|versionName]
+
+
+##  hiapk.com: get
+
+http://market.hiapk.com/service/api2.php?qt=1020&pid=2&sort=5&pi=1&ps=20
+http://market.hiapk.com/service/api2.php?qt=1020&pid=1&sort=5&pi=1&ps=20
+
+result.data.item[n].[pkn|version|vcode]
